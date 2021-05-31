@@ -343,6 +343,13 @@ p ,dd {
 	background-color:#005DAD;
 }
 
+.pc_view {
+	display:block;
+}
+
+.mb_view {
+	display:none;
+}
 
 /*初期設定ここまで*/
 
@@ -542,6 +549,19 @@ section:not(#debut){
 	height: 33vw;
 	position: relative;
 	margin: 6vw 0;
+}
+
+.slide img {
+	width: 100%;
+	display: block;
+}
+
+.slider-ctr {
+	display: block;
+}
+
+.slider_Mb {
+	display: none;
 }
 
 /*Design コンテンツここまで*/

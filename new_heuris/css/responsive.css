@@ -218,7 +218,7 @@ p ,dd {
     border: 1px solid #333;
     display: block;
     height: 0;
-	font-size: 1vw;
+	font-size: 2.2vw;
 	font-weight: normal;
 	text-align: left;
 	padding: 1vw;
@@ -242,18 +242,18 @@ p ,dd {
 }
 
 .acd-content table .td_head {
-	font-size: 1.3vw;
+	font-size: 3.3vw;
 	font-weight: bold;
 	text-align: center;
 }
 
 .acd-content td:first-child:not(.td_head) {
-	font-size: 1.1vw;
+	font-size: 2vw;
 	font-weight: bold;
 }
 
 .acd-content tr td span {
-	font-size: 0.9vw;
+	font-size: 1.9vw;
 }
 	
 /*アコーディオンメニューここまで*/
@@ -390,7 +390,7 @@ nav {
 	
 }
 
-section:not(#debut, #about, #performance, #technology, #utility){
+section:not(#debut, #about, #performance, #technology, #design, #utility, #lineup){
 	padding: 5% 10.5%;
 	height: 135vw;
 }
@@ -407,6 +407,68 @@ section:not(#debut, #about, #performance, #technology, #utility){
 	height: 50vw;
 }
 
+/* スライダー　モバイル版のみの設定 */
+
+@media only screen and (max-width: 700px) {
+	.slider-ctr {
+		display: none;
+	}
+
+	.slider_Mb{
+		/* 以下の設定は必須 */
+		scroll-snap-type: x mandatory;
+		width: 100%;
+		height: 75vw;
+		margin: 0 auto;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		display: flex;
+		position: relative;
+		-webkit-overflow-scrolling: touch;
+		overflow-scrolling: touch;
+		border: solid #E9D900 10px;
+	}
+	.slider_Mb > div{
+		/* 以下の設定は必須 */
+		scroll-snap-align: center;
+		height: 100%;
+		width: 100%;
+		flex: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.slider_Mb img {
+		width: 100%;
+	}
+
+	#mbSlider_box_1, #mbSlider_box_2, #mbSlider_box_3, #mbSlider_box_4 {
+		position: relative;
+	}
+
+	#mbSlider_caption_1, #mbSlider_caption_2, #mbSlider_caption_3, #mbSlider_caption_4 {
+		position: absolute;
+		top: 2vw;
+		left: 4vw;
+	}
+
+	.title_Mb {
+		font-size: 10vw;
+	}
+
+	.author_Mb {
+		font-size: 3vw;
+	}
+
+	.slider_Mb_bkfont {
+		color: #000;
+	}
+	
+}
+
+/* スライダー　モバイル版のみの設定ここまで */
+
 /*各セクション全体設定ここまで*/
 
 #debut {
@@ -419,11 +481,12 @@ section:not(#debut, #about, #performance, #technology, #utility){
 
 .debut_Mb {
 	width: 100%;
+	height: 185%;
 	background-image: url(../images/top_image_Mb.jpg);
 	overflow: hidden;
 	margin: 0 auto;
-	background-position: center;
-	background-size: 100vw;
+	background-position: 105% -65%;
+	background-size: 81vw;
 }
 
 #debut h2 {
@@ -519,6 +582,11 @@ section:not(#debut, #about, #performance, #technology, #utility){
 
 /*Design コンテンツここから*/
 
+#design {
+	padding: 5% 10.5%;
+	height: 120vw;
+}
+
 .slider_in {
 	width: 0vw;
 	height: 33vw;
@@ -531,8 +599,8 @@ section:not(#debut, #about, #performance, #technology, #utility){
 /*Utility　コンテンツここから*/
 
 #utility {
-	padding: 5% 10.5%;
-	height: 200vw;
+	padding: 5% 0;
+	height: 465vw;
 }
 
 .utilitybox article {
@@ -566,15 +634,6 @@ section:not(#debut, #about, #performance, #technology, #utility){
 	width: 100%;
 }
 
-.utilityimg p {
-	width:45%;
-}
-
-.caption {
-	display: flex;
-	align-items: center;
-}
-
 .relativeUt {
 	position: relative;
 	width: 100%;
@@ -586,16 +645,17 @@ section:not(#debut, #about, #performance, #technology, #utility){
 
 .utility_caption {
 	position: relative;
-	width: 45%;
+	width: 90%;
 	height: 100%;
+	margin: 0 auto;
 }
 
 .utility_caption p {
 	color: #FFF;
 	font-size: 1.5vw;
 	position: absolute;
-	top: 48%;
-	left: 6%;
+	top: 87%;
+	left: 0%;
 	background-color: rgba( 0,0,0,0.4 );
 	padding: 1.1vw;
 }
@@ -608,7 +668,12 @@ p.absoluteUt {
 	padding: 1vw 1vw;
 }
 
-
+.caption {
+	width: 100%;
+	text-align: center;
+	font-size: 2.3vw;
+	padding: 6vw;
+}
 
 /*Utilityの画像一覧の中で、箱を右寄せにするプロパティ*/
 
@@ -618,17 +683,26 @@ p.absoluteUt {
 
 /*Lineupコンテンツここから*/
 
+#lineup {
+	height: 200vw;
+	padding: 5% 10.5%;
+}
+
+.lineup {
+	display: block;
+}
+
 #lineup h2 {
 	font-family: "Eras ETC regular", sans-selif;
 }
 
 .lineupbox {
-	width: 42%;
 	height: 600px;
 	display: flex;
 }
 
 .lineupbox dl {
+	width: 100%;
 	text-align: center;
 }
 
