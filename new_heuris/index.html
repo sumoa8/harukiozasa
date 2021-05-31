@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>New HEURIS Special Website</title>
+
+<link href="css/style.css" rel="stylesheet" media="screen and (min-width:701px)">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+<link href="css/wipe_in.css" rel="stylesheet">
+
+<!--700ピクセル以下はスマートフォン表示-->
+<link href="css/responsive.css" rel="stylesheet" media="screen and (max-width: 700px)">
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 800; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+</script>
+
+</head>
+
+<body>
+
+<!--ナビゲーションエリアここから-->
+
+
+
+<div class="nav_back">
+    <div>
+        <nav class="nav_in">
+            <ul class="navilist">
+                <li id="top_logo">
+                	<h1>
+                    	<a href="#wrapper" alt="">
+                        	<img src="images/heurislogo.svg" alt="">
+                        </a>
+                    </h1>
+                </li>
+                <li class="hover_slide">
+                	<a href="#aboutP">About New HEURIS</a>
+                </li>
+                <li class="hover_slide">
+                	<a href="#performanceP">Performance</a>
+                </li>
+                <li class="hover_slide">
+                	<a  href="#technologyP">Technology</a>
+                </li>
+                <li class="hover_slide">
+                	<a  href="#designP">Design</a>
+                </li>
+                <li class="hover_slide">
+                	<a href="#utilityP">Utility</a>
+                </li>
+                <li class="hover_slide">
+                	<a href="#lineupP">Lineup</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<!--ナビゲーションエリアここまで-->
+
+<!--メインコンテンツここから-->
+
+<div id="wrapper">
+
+<!--Top pageここから-->
+<section id="debut">
+
+<div id="fade_in_box" class="debut_Mb">
+	<div class="fade_in">
+    	<img src="images/top_image_dark.jpg" alt="" class="fade_in_img">
+    </div>
+</div>
+
+	<h2 class="copy_anime">
+        New<br>
+        HEURIS<br>
+        	<span class="copy_anime_2">Debut.</span>
+    </h2>
+</section>
+<!--Top pageここまで-->
+
+
+<!--Aboutここから-->
+<section id="about">
+	<a class="jump" id="aboutP"></a>
+	<h2 class="img-wrap">About New HEURIS<br>
+    <img src="images/star.png" alt="見出し"></h2>
+    <div class="contentsbox" id="aboutbox">
+    	<h3 class="txt_anime">直観で。<br>
+    	それでいて、煌びやかに遊ぶ。</h3>
+    	<p class="txt_anime_2">「HEURIS」のヒントとなった、「Heuristic」という言葉には”直観による判断”という意味があります。そんな言葉の魂を込めたNew HEURISには、いつまでも若くいられるあなたに最高の走りと時間をお届けします。</p>
+   	</div>
+    
+</section>
+<!--Aboutここまで-->
+
+<!--Performanceここから-->
+
+<section id="performance">
+	<a class="jump" id="performanceP"></a>
+	<h2 class="img-wrap_bk">Performance<br>
+    	<img src="images/star.png" alt="見出し">
+    </h2>
+    <div class="contentsbox">
+        <p class="txt_anime">フルタイム4WD駆動のシステムに加え、最大出力6000rpmを発揮する直列６気筒エンジンが、あなたを最高級の走りに誘います。また、低速時（20km/h以下）にはマイルドハイブリッドシステムを採用しており、EVによる惰性だけで走行することが可能です。極上のパワーを発揮する瞬間と、エレガントな静粛性を発揮する二面性は心の底からワクワク感を与えます。</p>
+        <p class="mute_Mb"><img src="images/driving.jpg" alt="走行性能"></p>
+        </div>
+        <div class="performancebox">
+        <p><img src="images/driving_2.jpg" alt="海岸の走行"></p>
+        <p id="driving3"><img src="images/driving_3.jpg" alt="走行リア"></p>
+    </div>
+</section>
+
+<!--Performanceここまで-->
+
+
+<!--Technologyここから-->
+
+<section id="technology" class="technology_Mb">
+	<a class="jump" id="technologyP"></a>
+	<h2 class="img-wrap_bk">Technology<br>
+    <img src="images/star.png" alt="見出し"></h2>
+    <dl class="techbox">
+    
+    	<div class="techcontents">
+             <dt class="img-wrap_bk">
+                <img src="images/digital_cockpit.jpg">
+             </dt>
+             <dd class="txt_anime">フル液晶12インチコクピット（HEURISデジタルコクピット）が、ドライバーの視認性をより一層に高めます。</dd>
+         </div>
+        <div class="techcontents">
+        	<dt class="img-wrap_bk">
+            	<img src="images/radarassist.jpg" alt="HEURISレーダーアシストシステム">
+             </dt>
+			<dd class="txt_anime">ボディ各部に装備された（全車種標準装備）HEURISレーダーアシストシステムは、100メートル圏内の歩行者や動物を捉え、ドライバーへ通知することにより安全性を確保します。</dd>
+        </div>
+        <div class="techcontents"><dt class="img-wrap_bk"><img src="images/headlight.jpg" alt="アダプティブレーザーヘッドライトシステム"></dt>
+        	<dd class="txt_anime">アダプティブレーザーヘッドライトシステムにより、常にハイビームをキープし、前続車や対向車を自動検知し、部分的にロービームに切り替える他、通常のヘッドライトの3倍の射程距離の視界を確保します。</dd>
+        </div>
+	
+    </dl> 
+     
+    
+    
+</section>
+
+<!--Technologyここまで-->
+
+
+<!--Designここから-->
+
+<section id="design">
+	<a class="jump" id="designP"></a>
+	<h2 class="img-wrap_bk">Design<br>
+    <img src="images/star.png" alt="見出し"></h2>
+    
+    
+	<div class="slider_in wipe_in">
+            <!--スライダーの設置-->
+                        <div class="slider-ctr">
+                <figure class="slide"><img src="images/slide_1.jpg" alt="エッジの効いたキャラクターライン">
+                    <figcaption>
+                        <div class="title" id="slider_title_Mb">Exterior</div>
+                        <div class="author" id="slider_author_Mb">エッジの効いたキャラクターライン</div>
+                    </figcaption>
+                </figure>
+                <figure class="slide"><img src="images/slide_2.jpg" alt="エッジの効いたキャラクターライン">
+                    <figcaption>
+                        <div class="title">Interior</div>
+                        <div class="author">上質感を極めたセンターコンソール</div>
+                    </figcaption>
+                </figure>
+                <figure class="slide"><img src="images/slide_3.jpg" alt="エッジの効いたキャラクターライン">
+                    <figcaption>
+                        <div class="title">Exterior</div>
+                        <div class="author">印象的なテールランプ</div>
+                    </figcaption>
+                </figure>
+                <figure class="slide text-on"><img src="images/slide_4.jpg" alt="エッジの効いたキャラクターライン">
+                    <figcaption>
+                        <div class="title">Interior</div>
+                        <div class="author">スポーティなステアリング</div>
+                    </figcaption>
+                </figure>
+                <div class="slider-control">
+                    <div class="control prev disabled">
+                        <div class="icon ion-chevron-left"><img src="images/slide_button.png" alt=""></div>
+                    </div>
+                    <div class="control next">
+                        <div class="icon ion-chevron-right"><img src="images/slide_button_right.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <!--スライダーの設置ここまで-->
+            
+
+    </div>
+    
+    
+</section>
+
+<!--Designここまで-->
+
+
+<!--Utilityここから-->
+
+<section id="utility">
+	<a class="jump" id="utilityP"></a>
+	<h2 class="img-wrap_wt">Utility<br>
+    <img src="images/star.png" alt="見出し"></h2>
+    
+    
+    <div class="utilitybox">
+    	<article class="relativeUt txt_anime_2">
+        	<img src="images/fune_utility.jpg" alt="Fune氏に密着し、車のユーティリティを紹介します。" class="absoluteUt">
+   		 	<div class="utility_caption">
+            	<p>今回は、コラボレーションの一環として、プロフィッシャーFune氏の1日に密着して新型HEURIS HACHBACKのユーティリティ性能について迫ります。</p>
+            </div>
+            
+        </article> 
+         <div class="utilityimg">
+         	<p class="img-wrap_wt"><img src="images/learspace.jpg" alt="リアラゲッジには、釣り道具も積載できます"></p>
+            <p class="caption txt_anime_2">最大積載量380ℓのリアラゲッジに高まる思いと道具を詰め込む。</p>
+         </div>
+         <div class="utilityimg">
+         	<p class="utilityR caption txt_anime_2">
+         		海風を感じながらハンドルを握る。
+            </p>
+         	<p class="img-wrap_wt_R"><img src="images/utility_2.jpg" alt="高まる気持ちを胸にハンドルを握る。"></p>
+         </div>
+         <div class="utilityimg">
+         	<p class="img-wrap_wt"><img src="images/utility_3.jpg" alt=""></p>
+            <p class="caption txt_anime_2">「その日の潮の流れやコンディションもまた出会いだ。」と語るFune氏。</p>
+         </div>
+         <div class="utilityimg">
+         	<p class="caption txt_anime_2">
+            	夕日に赤く照らされる車両と共に、帰路に就く。
+            </p>
+         	<p class="utilityR img-wrap_wt_R">
+                	<img src="images/evening.jpg" alt="夕日に赤く照らされる車両と共に、帰路に就く。">
+            </p>
+         </div>
+         
+    </div>
+</section>
+
+<!--Utilityここまで-->
+
+<!--Lineup ここから-->
+
+<section id="lineup">
+	<a class="jump" id="lineupP"></a>
+	<h2 class="img-wrap_wt">Lineup<br>
+    <img src="images/star.png" alt="見出し"></h2>
+    <div class="contentsbox">
+    	<div class="lineupbox">
+            <dl class="txt_anime">
+                <dt>
+                <img src="images/heuris_lineup.png" alt="HEURIS HACHBACK">
+                </dt>
+                <dd>
+                HEURIS HATCHBACK
+                </dd>
+                <dd class="accordion">
+                    <input id="acd-check1" class="acd-check" type="checkbox">
+                    <label class="acd-label" for="acd-check1">
+                        車両情報
+                    </label>
+                    <div class="acd-content">
+                      <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="td_head">走行</td>
+                            </tr>
+                            <tr>
+                                <td>エンジン</td><td>直列6気筒</td>
+                            </tr>
+                            <tr>
+                                <td>総排気量</td><td>2996cc</td>
+                            </tr>
+                            <tr>
+                                <td>最高出力</td><td>258ps／6000rpm</td>
+                            </tr>
+                            <tr>
+                                <td>最大トルク</td>
+                                <td>
+                                    <span>300Nm／2500〜4000rpm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="td_head">車両</td>
+                            </tr>
+                            <tr>
+                                <td>サイズ<br>
+                                    <span>(全長全幅全高 mm)</span>
+                                </td>
+                                <td>4,350／1,815／1,440</td>
+                            </tr>
+                            <tr>
+                                <td>車両重量（Kg）</td><td>1,560</td>
+                            </tr>
+                            <tr>
+                                <td>乗車定員（名）</td><td>5</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </dd>
+            </dl>
+    	</div>
+    	<div class="lineupbox">
+    		<dl class="txt_anime_2">
+                <img src="images/heuris_lineup.png" alt="HEURIS HACHBACK">
+                </dt>
+                <dd>
+                HEURIS HATCHBACK
+                </dd>
+                <dd class="accordion">
+                    <input id="acd-check2" class="acd-check" type="checkbox">
+                    <label class="acd-label" for="acd-check2">
+                        車両情報
+                    </label>
+                    <div class="acd-content">
+                      <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="td_head">走行</td>
+                            </tr>
+                            <tr>
+                                <td>エンジン</td><td>直列6気筒</td>
+                            </tr>
+                            <tr>
+                                <td>総排気量</td><td>2996cc</td>
+                            </tr>
+                            <tr>
+                                <td>最高出力</td><td>258ps／6000rpm</td>
+                            </tr>
+                            <tr>
+                                <td>最大トルク</td>
+                                <td>
+                                    <span>300Nm／2500〜4000rpm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="td_head">車両</td>
+                            </tr>
+                            <tr>
+                                <td>サイズ<br>
+                                    <span>(全長全幅全高 mm)</span>
+                                </td>
+                                <td>4,350／1,815／1,440</td>
+                            </tr>
+                            <tr>
+                                <td>車両重量（Kg）</td><td>1,560</td>
+                            </tr>
+                            <tr>
+                                <td>乗車定員（名）</td><td>5</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </dd>
+            </dl>
+    </div>
+   </div> 
+</section>
+
+
+<!--Lineup ここまで-->
+<!--メインコンテンツここまで-->
+
+<footer>
+
+
+
+<p><small>POYOTA Cars All Rights Reserved.</small></p>
+
+</footer>
+</div>
+
+
+
+
+<script src="js/slider.js"></script>
+<script src="js/wipe_anime.js"></script>
+
+</body>
+</html>

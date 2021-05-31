@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+* {
+    font-size: 1px;
+}
+
+body {
+	width: 98vw;
+    opacity: 1;
+}
+
+h1 {
+	width: 100%;
+    color: #4d2e19;
+    font-size: 48rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+	margin-top: 2.7%;
+}
+
+h1 a {
+	display: inline-block;
+	width: 100%;
+	color: #4d2e19;
+    font-size: 48rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+	transition-duration: 0.3s;
+}
+
+h1 a:hover {
+	opacity: 0.6;
+	transition-duration: 0.3s;
+}
+
+.wood {
+    width: 41.5%;
+    margin: 7.3% auto 0 30.8%;
+    position: relative;
+}
+
+.profile_page {
+	width: 11vw;
+	height: 11vw;
+    position: absolute;
+    top: 5.8%;
+    right: 72%;
+}
+
+.page_box {
+	width: 100%;
+	position: relative;
+}
+
+.profile_page a, .works_page a{
+    width: 8vw;
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+	position: absolute;
+	top: 3.4vw;
+    left: 1.4vw;
+    z-index: 2;
+    padding: 1vw 0 1vw 0;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.profile_page p, .works_page p, .contact_page p {
+    color: white;
+    font-family: "Arial", "小塚ゴシック Pr6N", sans-serif;
+    font-size: 1vw;
+	letter-spacing: 0.1vw;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+	transition-duration: 0.3s;
+}
+
+.page_box span {
+	font-weight: bold;
+	font-size: 1vw;
+}
+
+.profile_page img, .works_page img {
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.works_page {
+	width: 11vw;
+	height: 11vw;
+    position: absolute;
+    bottom: 75.8%;
+    left: 60.36%;
+}
+
+.contact_page {
+	width: 11vw;
+	height: 11vw;
+}
+
+.contact_page p {
+    width: 8vw;
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    padding: 1vw 0 1vw 0;
+    position: absolute;
+    top: -9vw;
+    left: 17.7vw;
+    z-index: 2;
+}
+
+.contact_image {
+    position: relative;
+    opacity: 0;
+    transition-duration: 0s;
+}
+
+.contact_image:hover {
+    opacity: 1;
+    transition-duration: .3s;
+}
+
+.contact_image img:nth-of-type(1) {
+    position: absolute;
+    top: -16vw;
+    left: 17vw;
+    width: 9.5vw;
+}
+
+.contact_image img:nth-of-type(2) {
+    position: absolute;
+    top: -9vw;
+    left: -3vw;
+    width: 36.2vw;
+}
+
+.contact_image img:nth-of-type(3) {
+    position: absolute;
+    top: -12vw;
+    left: -14vw;
+    width: 12.5vw;
+}
+
+.contact_image img:nth-of-type(4) {
+    position: absolute;
+    top: -13.6vw;
+    left: -20vw;
+    width: 8.4vw;
+}
+
+h1, #wood {
+    opacity: 0;
+}
+
+footer {
+	width: 100%;
+}
+

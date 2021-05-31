@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+html {
+    font-size: 1px;
+    font-family:  "Arial", "Yu Gothic", "YuGothic", system-ui;
+    font-weight:  lighter;
+}
+
+body {
+    background-image: url("../images/profile_back.jpg");
+    background-size: auto;
+    background-position: right bottom;
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+section {
+    width: 98vw;
+    margin: 0 auto;
+    padding: 1vw 19vw;
+}
+
+.profile {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1vw;
+}
+
+.my_name {
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+.my_name span {
+	font-size: 1.4vw;
+	font-weight: lighter;
+	margin-left: 2.3vw;
+}
+
+.profile_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile_box p {
+    width: 47%;
+    margin: 2vw 0;
+}
+
+.profile_hl {
+	font-size: 1.6vw;
+	font-weight: bold;
+	margin: 1vw 0 0.1vw 0;
+}
+
+.skills {
+	font-size: 1.2vw;
+	font-weight: normal;
+}
+
+.profile_caption {
+	line-height: 2vw;
+	font-weight: 500;
+}
+
+

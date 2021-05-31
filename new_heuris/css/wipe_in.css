@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*シアン背景でのワイプインここから*/
+
+.img-animation {
+  animation: img-opacity 0.8s cubic-bezier(.4, 0, .2, 1) 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-animation:before {
+  animation: img-animation 0.8s ease-in-out forwards 0.4s;
+  background-color:#005DAD;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-opacity {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes img-animation {
+	0% {
+		transform: translateX(0%);
+	}
+  50% {
+	  transform: translateX(20%);
+	  opacity: 1;
+}
+100% {
+	transform: translateX(100%);
+	opacity: 0;
+  }
+}
+
+.img-wrap {
+	display: block;
+}
+
+/*シアン背景でのワイプインここまで*/
+
+
+
+/*黒背景でのワイプインここから*/
+
+.img-animation_bk {
+  animation: img-opacity_bk 0.8s cubic-bezier(.4, 0, .2, 1) 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-animation_bk:before {
+  animation: img-animation_bk 0.8s ease-in-out forwards 0.4s;
+  background-color:#000;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-opacity_bk {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes img-animation_bk {
+	0% {
+		transform: translateX(0%);
+	}
+  50% {
+	  transform: translateX(20%);
+	  opacity: 1;
+}
+100% {
+	transform: translateX(100%);
+	opacity: 0;
+  }
+}
+
+.img-wrap {
+	display: block;
+}
+
+/*黒背景でのワイプインここまで*/
+
+/*白背景でのワイプインここから*/
+
+.img-animation_wt {
+  animation: img-opacity_wt 0.8s cubic-bezier(.4, 0, .2, 1) 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-animation_wt:before {
+  animation: img-animation_wt 0.8s ease-in-out forwards 0.4s;
+  background-color:#fff;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-opacity_wt {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes img-animation_wt {
+	0% {
+		transform: translateX(0%);
+	}
+  50% {
+	  transform: translateX(20%);
+	  opacity: 1;
+}
+100% {
+	transform: translateX(100%);
+	opacity: 0;
+  }
+}
+
+.img-wrap {
+	display: block;
+}
+
+/*白背景でのワイプインここまで*/
+
+/*白背景でのワイプイン（右から左）ここから*/
+
+.img-animation_wt_R {
+  animation: img-opacity_wt_R 0.8s cubic-bezier(.4, 0, .2, 1) 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-animation_wt_R:before {
+  animation: img-animation_wt_R 0.8s ease-in-out forwards 0.4s;
+  background-color:#fff;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-opacity_wt_R {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes img-animation_wt_R {
+	0% {
+		transform: translateX(0%);
+	}
+  50% {
+	  transform: translateX(-20%);
+	  opacity: 1;
+}
+100% {
+	transform: translateX(-100%);
+	opacity: 0;
+  }
+}
+
+.img-wrap {
+	display: block;
+}
+
+/*白背景でのワイプイン（右から左）ここまで*/
+
+
+
+.img-opacity {
+  animation: img-opacity_bk 0.3s cubic-bezier(.4, 0, .2, 1) 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.wipe_motion {
+	display: block;
+	animation: wipe_motion 0.5s ease-in-out forwards 0.4s;
+	transform-origin: 50% 50%;
+	content: '';
+}
+
+@keyframes wipe_motion {
+	0% {
+		width: 0%;
+	}
+100% {
+	width: 100%;
+  }
+}

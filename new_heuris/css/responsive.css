@@ -1,0 +1,651 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*初期設定ここから*/
+
+*{
+	margin:0;
+	padding:0;
+	background-repeat:no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+li{
+	list-style-type:none;
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+@font-face {
+	font-family: 'Eras ETC regular';
+	src: url(../ERASDEMI.TTF)
+}
+
+body {
+	width: 100%;
+}
+
+p ,dd {
+	font-family: "游ゴシック", "Arial", sans-serif
+}
+
+#about h3 {
+	font-family: "游ゴシック", "Arial", sans-serif;
+	font-weight: bold;
+}
+
+.slide text-on figcaption{
+	font-family: "Eras ETC regular", "游ゴシック", "Arial", sans-serif;
+	font-weight: lighter;
+}
+
+/*モバイル版のみの共通設定*/
+
+.mute_Mb {
+	width: 0;
+	height: 0;
+	display: inline;
+	opacity: 0;
+}
+
+.technology_Mb {
+	height: 240vw;
+	padding: 5% 10.5%;
+}
+
+#slider_title_Mb
+
+#slider_author_Mb
+
+/*演出設定*/
+
+.fade_in_box, .fade_in, .fade_in_img {
+	opacity: 0;	/*fade_in　はモバイル版では非表示*/
+}
+
+@keyframes nav_in {
+	0% { 
+	transform: translateY( -95px )
+	}
+	100% { 
+	transform: translateY( 0px )
+	}
+}
+
+.nav_back {
+	position: relative;
+}
+
+.nav_back div {
+	width: 100%;
+	height: 95px;
+	position: absolute;
+	background-color: #000;
+}
+
+#top_logo:hover {
+	opacity: 0.5;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+
+.hover_slide {
+	background: rgba(0,0,0,0);
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	}
+
+.hover_slide:before {
+	background : #FFE100;
+	content:"";
+	display: block;
+	height: 100%;
+	left: -100%;
+	opacity: 0.8;
+	position: absolute;
+	z-index: 3;
+	transition: .3s;
+	top: 0px;
+	width: 100%;
+}
+
+.hover_slide:hover:before {
+	left:0;
+}
+
+.hover_slide a {
+	position: absolute;
+	z-index: 4;
+}
+
+.hover_slide a:hover {
+	color: #000;
+	transition-duration:.4s;
+}
+
+.copy_anime {
+	animation-name: copy_anime;
+	animation-fill-mode: backwards;
+	animation-duration: 0.6s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes copy_anime{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.copy_anime_2 {
+	animation-name: copy_anime;
+	animation-fill-mode: backwards;
+	animation-delay: 0.6s;
+	animation-duration: 0.6s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes copy_anime_2{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.txt_anime_fade {
+	animation-name: copy_anime;
+	animation-fill-mode: backwards;
+	animation-duration: 0.5s;
+	animation-delay: 0.8s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes txt_anime{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.txt_anime_fade_late {
+	animation-name: copy_anime;
+	animation-fill-mode: backwards;
+	animation-duration: 0.5s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes txt_anime_2{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+		
+
+/*演出ここまで*/
+
+/*アコーディオンメニューの設定ここから*/
+
+.accordion {
+	width: 100%;
+}
+
+.acd-check{
+    display: none;
+}
+.acd-label{
+	height: 5.5vw;
+	background: #008DCB;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding-left: 35%;
+	font-size: 1.7vw;
+}
+
+.acd-label:after{
+    box-sizing: border-box;
+    content: url(../images/star.svg);
+	display: flex;
+	align-items: center;
+	padding-left: 15%;
+}
+.acd-content{
+    border: 1px solid #333;
+    display: block;
+    height: 0;
+	font-size: 1vw;
+	font-weight: normal;
+	text-align: left;
+	padding: 1vw;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+}
+
+.acd-check:checked + .acd-label:after{
+    content: url(../images/star_minus.svg);
+}
+.acd-check:checked + .acd-label + .acd-content{
+    height: 280px;
+    opacity: 1;
+	padding: 1vw;
+    visibility: visible;
+}
+
+.acd-content table {
+	width: 100%;
+}
+
+.acd-content table .td_head {
+	font-size: 1.3vw;
+	font-weight: bold;
+	text-align: center;
+}
+
+.acd-content td:first-child:not(.td_head) {
+	font-size: 1.1vw;
+	font-weight: bold;
+}
+
+.acd-content tr td span {
+	font-size: 0.9vw;
+}
+	
+/*アコーディオンメニューここまで*/
+
+a.jump {
+	display: block;
+	padding-top: 15%;
+	margin-top: -15%;
+}
+
+h1{
+	font-family: "Eras ETC regular", sans-selif;
+	font-size: 350%;
+}
+
+#wrapper h2 img {
+	width: 63vw;
+}
+
+#debut h2 {
+	font-family: "Eras ETC regular", sans-selif;
+	font-size: 290%;
+	margin-top: 4vw;
+	line-height: 7vw;
+	transition: 0.6 ease-in 1s;
+}
+
+#debut span {
+	font-size: 120%;
+	display: inline-block;
+	margin-top: 11vw;
+}
+
+#about h2, #performance h2,#technology h2, #design h2, #utility h2, #lineup h2:not(#debut h2, #debut h2 span) {
+	font-family: "Eras ETC regular", sans-selif;
+	font-size: 6vw;
+	text-align: center;
+}
+
+
+p,dd{
+	font-family: "游ゴシック", "Arial", "sans-selif";
+}
+
+.contentsbox {
+	margin-top: 6.71%;
+	display: flex;
+	justify-content:space-between ;
+}
+/*全てのフレックスレイアウトは中心に上記のパディングを持つため、横の空白を無くしたレイアウトをする際はidで再度パディングを設定*/
+
+/*背景色の設定*/
+.backgroundscian {
+	background-color:#005DAD;
+}
+
+/*文字サイズ共通のセクションのプロパティ*/
+
+#about #aboutbox p, .contentsbox p {
+	font-size: 3.8vw;
+}
+
+.techcontents dd {
+	font-size: 2.7vw;
+}
+
+
+/*初期設定ここまで*/
+
+/*各セクション全体設定ここから*/
+
+nav {
+	background-color: #005DAD;
+	width: 100vw;
+	height: 95px;
+	position: fixed;
+	z-index: 99;
+	color: #FFF;
+}
+
+.navilist {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 95px;
+	padding: 0 2%;
+}
+
+#top_logo {
+	width: 11%;
+}
+
+.navilist img {
+	height: 6vw;
+	vertical-align: bottom;
+}
+
+.navilist li {
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navilist li .top_logo {
+	width: 16%;
+	height: 100%;
+}
+
+.navilist li h1 {
+	height: 100%;
+	display: block;
+}
+
+.navilist li h1 a {
+	 display: flex;
+	 align-items: center;
+}
+
+.navilist li h1 a img {
+	vertical-align: middle;
+}
+
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 95px;
+	font-size: 4.5vw;
+	
+}
+
+section:not(#debut, #about, #performance, #technology, #utility){
+	padding: 5% 10.5%;
+	height: 135vw;
+}
+
+#about,#debut,#performance,#technology,#design {
+	background-color: #000000;
+	color: #FFF;
+}
+
+.designbox .utilitybox{
+	margin-top: 6.71%;
+	display: flex;
+	justify-content:space-between ;
+	height: 50vw;
+}
+
+/*各セクション全体設定ここまで*/
+
+#debut {
+	width: 100vw;
+	height: 94vw;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.debut_Mb {
+	width: 100%;
+	background-image: url(../images/top_image_Mb.jpg);
+	overflow: hidden;
+	margin: 0 auto;
+	background-position: center;
+	background-size: 100vw;
+}
+
+#debut h2 {
+	position: absolute;
+	font-size: 11vw;
+	top: 8vw;
+	left: 44vw;
+	z-index: 4;
+	line-height: 15vw;
+	text-align: left;
+}
+
+/*ここからabboutページ*/
+
+#about {
+	background-color: #005DAD;
+	background-image: url(../images/aboutimage.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 140vw;
+	height: 175vw;
+	padding: 13vw 4vw 0vw 4vw;
+}
+
+#aboutbox {
+	flex-direction: column;
+	color: #E9D900;
+}
+
+#about h3 {
+	width: 85%;
+	font-size: 120%;
+	margin: 0 auto;
+}
+
+#about p {
+	width: 89%;
+	height: 47%;
+	margin: 3% auto 0 auto;
+}
+
+
+
+/*#about {
+	height:55vw;
+	margin: 0 auto;
+	background-image:url(../images/aboutimage.png);
+	background-size: 100%;
+	height:55vw;
+	width: 70%;
+	margin: 0 auto;
+}*/
+
+/*Performance コンテンツここから*/
+
+#performance {
+	padding-top: 13vw;
+}
+
+#performance img {
+	width:100% ;
+}
+
+#performance .contentsbox {
+	padding: 5% 10.5%;
+}
+
+.contentsbox img {
+	width: 85%;
+}
+
+/*Performance コンテンツここまで*/
+
+/*Technology コンテンツここから*/
+
+.techbox {
+	margin-top: 6.71%;
+	padding: 0 6%;
+}
+
+.techcontents {
+	width: 100%;
+	margin-top: 6%;
+	
+}
+
+.techcontents dt img {
+	width: 100%;
+}
+
+/*Technology コンテンツここまで*/
+
+
+/*Design コンテンツここから*/
+
+.slider_in {
+	width: 0vw;
+	height: 33vw;
+	position: relative;
+	margin: 6vw 0;
+}
+
+/*Design コンテンツここまで*/
+
+/*Utility　コンテンツここから*/
+
+#utility {
+	padding: 5% 10.5%;
+	height: 200vw;
+}
+
+.utilitybox article {
+	height: 32vw;
+}
+
+.utilitybox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.utilitybox article img{
+	width: 100%;
+}/*
+
+.utilitybox p {
+	width: 38%;
+}*/
+
+.utilityimg {
+	margin-top: 8%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	font-size: 1.5vw;
+	letter-spacing: 0.1vw;
+}
+
+.utilityimg img {
+	width: 100%;
+}
+
+.utilityimg p {
+	width:45%;
+}
+
+.caption {
+	display: flex;
+	align-items: center;
+}
+
+.relativeUt {
+	position: relative;
+	width: 100%;
+}
+
+.absoluteUt {
+	position: absolute;
+}
+
+.utility_caption {
+	position: relative;
+	width: 45%;
+	height: 100%;
+}
+
+.utility_caption p {
+	color: #FFF;
+	font-size: 1.5vw;
+	position: absolute;
+	top: 48%;
+	left: 6%;
+	background-color: rgba( 0,0,0,0.4 );
+	padding: 1.1vw;
+}
+
+p.absoluteUt {
+	top: 52%;
+	left: 2%;
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.3);
+	padding: 1vw 1vw;
+}
+
+
+
+/*Utilityの画像一覧の中で、箱を右寄せにするプロパティ*/
+
+
+/*Utility　コンテンツここまで*/
+
+
+/*Lineupコンテンツここから*/
+
+#lineup h2 {
+	font-family: "Eras ETC regular", sans-selif;
+}
+
+.lineupbox {
+	width: 42%;
+	height: 600px;
+	display: flex;
+}
+
+.lineupbox dl {
+	text-align: center;
+}
+
+.lineupbox dd:nth-of-type(2) {
+	width: 72%;
+	margin: 0 auto;
+}
+
+/*Lineupコンテンツここまで*/
+
+/*フッターここから*/
+
+footer {
+	background-color: #008DCB;padding: 5% 10.5%;
+	padding: 5% 10.5%;
+}
+
+footer p {
+	text-align: center;
+}

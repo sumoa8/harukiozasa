@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+html {
+    font-size: 1px;
+    font-family:  "Arial", "Yu Gothic", "YuGothic", system-ui;
+    font-weight:  lighter;
+}
+
+body {
+    background-image: url("../images/back_root.jpg");
+    background-size: auto;
+    background-position: left top;
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+section {
+    width: 98vw;
+    margin: 0 auto;
+    padding: 1vw 19vw;
+}
+
+h1 {
+    margin: 1vw auto;
+    text-align: center;
+    font-size: 41rem;
+    line-height: 28px;
+}
+
+h1 span{
+    font-size: 21rem;
+}
+
+.category {
+    font-size: 15rem;
+    margin: 2.28vw 0 0vw 0;
+    width: 63%;
+}
+
+.category ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+	height: 2vw;
+	align-items: center;
+}
+
+.category li {
+    font-size: 12rem;
+	padding: 1vw 0.5vw;
+	transition-duration: 0.4s;
+}
+
+.category li:hover {
+	color: #FFF;
+	background-color: #4d2e19;
+	opacity: 0.8;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.works_contents {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works_contents div {
+	width: 45.6%;
+    padding-top: 30px;
+}
+
+.works_contents div img {
+    border: solid #663300 1px;
+}
+
+.works_contents div p {
+    text-align:  center;
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 1.5vw;
+    margin-top: 1vw;
+}
+
+.works_contents div a {
+	display: inline-block;
+	height: 65.395%;
+	transition-duration: 0.3s;
+}
+
+.works_contents div a:hover {
+ 	filter: brightness(90%);
+	transition-duration: 0.3s;
+}
+
+.category_ex {
+	display: inline-block;
+	margin: 0.5vw auto 0 auto;
+	text-align: left;
+    font-size: 1vw;
+    font-weight: lighter;
+}
+
+

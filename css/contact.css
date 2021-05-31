@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	border: none;
+}
+
+.section{
+	padding: 1vw 0 0 0;
+}	
+
+.contact_info {
+	width: 54.9%;
+	margin: 4vw auto 0 auto;
+	font-size: 1vw;
+}
+
+.contact_info tbody {
+	display: block;
+	width:80%;
+	margin: 0 auto;
+}
+
+.contact_info tr {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contact_info tr {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contact_info td {
+	display:block;
+	width: 50%;
+}
+
+.contact_info td:nth-of-type(odd) {
+	width: 71.8%;
+	font-weight: bold;
+}
+
+.contact_info td:nth-of-type(even) {
+	width: 28.2%;
+	text-align: left;
+}

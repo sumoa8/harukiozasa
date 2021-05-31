@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全体設定*/
+
+html {
+    line-height: 2.1;
+}
+
+* {
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: "小塚ゴシック Pr6N", sans-selif, system-ui;
+    font-weight: normal;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+img {
+    width: 100%;
+}
+
+section h2 span {
+	font-size: 11.8vw;
+}
+
+section h2 {
+	position: absolute;
+    font-family: "小塚明朝 Pro";
+    font-weight: normal;
+    font-size: 4vw;
+}
+
+/* ナビの設定 */
+
+nav {
+    font-family: "小塚ゴシック Pr6N", sans-selif, system-ui;
+    font-size: 100%;
+    color: white;
+    vertical-align: middle;
+}
+
+nav ul li a {
+	display: block;
+}
+
+nav ul li img {
+    /* width: 6.48vw; */
+}
+
+nav ul {
+    height: 12vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 86.11vw;
+    margin: auto;
+}
+
+
+/*メインセクション*/
+
+body, nav {
+	width: 100%;
+	background-color: #0099cc;
+}
+
+#tourism_page {
+	width: 81.9%;
+	position: relative;
+	margin: 1vw auto 0 auto;
+}
+
+.tourism_list {
+	margin-top: 19.5vw;
+	display: inline-block;
+}
+
+#tourism_page ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#tourism_page ul li {
+	width: 42%;
+}
+
+.list_child {
+	margin-top: 7vw;
+}
+
+/*ここからフッターの設定*/
+
+footer {
+	width: 100%;
+	padding: 7.2vw 0 3vw 0;
+	color: #fff;
+}
+
+footer address {
+	width: 86.5%;
+	margin: 0 auto;
+}
+
+footer address div:nth-of-type(1):not(.sns_logo) {
+	width: 19.7%;
+	float: left;
+}
+
+footer address div:nth-of-type(2) {
+	width: 80.3%;
+	float: left;
+}
+
+footer address .sns_logo {
+	width: 3%;
+}
+
+.site_map {
+	width: 73%;
+	margin: 6vw 0 1vw 2.5vw;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.site_map li {
+	height: 7vw;
+	border-right: 1px solid #fff;
+	padding-right: 0.8vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: left;
+}
+
+.site_map li a:first-child {
+	font-weight: bold;
+}
+
+.site_map li a:nth-child(2) {
+	font-weight: normal;
+}
+	
+
+small {
+	font-size: 80%;
+	display: block;
+	margin: 10vw auto 0 auto;
+	text-align: center;
+}
+
+
+

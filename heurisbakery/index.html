@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet">
+ <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 800; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+
+<title>HEURIS BAKERY</title>
+
+<!--スライダーの設置ここから-->
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+
+<!--スライダーの設置ここまで
+-->
+</head>
+
+<body>
+
+<header>
+
+<div>
+<h1>
+<a href="#top1" id="topbutton"><img src="images/heurisbakerylogo.svg" width="220" height="125"></a>
+</h1>
+</div>
+
+
+<nav>
+<ul id="sidebar">
+<li>
+<a href="#top1">
+Top
+</a>
+</li>
+<li>
+<a href="#about">
+About
+</a>
+</li>
+<li>
+<a href="#menupage">
+Menu
+</a>
+</li>
+<li>
+<a href="#newspage">
+News
+</a>
+</li>
+<li>
+<a href="#accesspage">
+Access
+</a>
+</li>
+<li>
+<a href="#contactpage">
+Contact
+</a>
+</li>
+</ul>
+</div>
+</nav>
+
+</header>
+
+<div id="wrapper">
+
+<!--トップページ-->
+<section>
+<div class="topbox" id="top1">
+
+<!--トップイメージの設置ここから-->
+
+<div class="slide" id="makeImg">
+	<img src="images/heurisopenimage_2.jpg" alt="HEURIS BAKERY Grand Opening">
+    <img src="images/croissant.jpg" alt="croissant">
+    <img src="images/hotspringtown.jpg" alt="hotspringtown">
+</div>
+
+<!--トップイメージの設置ここまで-->
+
+
+</div>
+</section>
+
+<!--About-->
+<section>
+<div class="mainhako2" id="about">
+<div class="aboutmargin">
+<h2>About</h2>
+	<div id="about2"><p>忙しい毎日を送っている方に、<br>
+	すこしでもリラックスできる場を。</p>
+	</div>
+<div class="about3"><p>ヒューリスベーカリーは毎日を一生懸命に生きて、思い切り働いた自分を<br>
+褒めてあげたいお客様に「お疲れ様です！」を提供するベーカリーです。<br>
+疲れた心をおもてなしの品でサッパリとリフレッシュし、また明日からを<br>
+前向きに生きていきたい。そんな方たちへの居場所です。</p>
+</div>
+		<div id="ashiyu">
+		<p><img src="images/footbath_web.jpg" alt="足湯をお楽しみいただけます"></p>
+		</div>
+	<div class="about3" id="abmigishita">
+	<p>ベーカリーのテラスでは別府市の源泉を引き上げた<br>
+	足湯のサービスを提供しています。ご来店の方々は<br>
+	ご自由にお楽しみいただき、先ずは足の指先から<br>
+	疲れを癒していただけます。</p>
+	</div>
+<div class="clearfix"></div>
+
+</div>
+
+</div>
+<div class="mainhako3" id="about4">
+	<div class="room">
+		<img src="images/アジサイ.jpg" alt="ashiyu">
+	</div>
+<p>当店で配布させていただいる”グッジョブ！<br>
+カード”にポイントが貯まれば、専用ラウン<br>
+ジにてお寛ぎいただくことが出来ます。そこ<br>
+では通常のご注文以外にも日替わりのシェフ<br>
+によるお料理のサービスやマッサージチェア<br>
+をご利用いただくことが出来ます。<br>
+</p>
+	<div class="wifi">
+		<img src="images/electricport.jpg" alt="フリー充電スペース">
+	</div>
+
+	<p class="wifi2">
+当店は全席にフリー充電スポット、また店内には<br>
+Wi-fi環境を完備しております。「お仕事をまだこ<br>
+なしていかないといけないけど、少し落ち着いた<br>
+気持ちで臨みたい！」という方たちにピッタリの<br>
+スペースとなっており、コワーキングスペースの<br>
+ような使い方も可能です。
+	</p>
+<div class="clearfix"></div>
+
+</div>
+</section>
+
+<!---Menu--->
+<section>
+<div class="menubox" id="menupage">
+<div class="haba">
+	<div class="aboutmargin">
+	<h2>Menu</h2>
+	</div>
+	<div class="menu" id="ajikura">
+		<div class="menuleft"><p><img src="images/fix picture/steamed bread.jpg" alt="スチームドブレッド"></p>
+			<dl>
+			<dt>スチームドブレッド</dt>
+			<dd>￥500</dd>
+			</dl>
+		</div>
+		<div class="menuright">
+		<p><img src="images/fix picture/americandog.jpg" alt="アメリカンドッグ"></p>
+		<dl>
+		<dt>アメリカンホットドッグ</dt>
+		<dd>￥500</dd>
+		</dl>
+		</div>
+
+        
+
+	</div>
+    
+    	<div class="menu" id="ajikura">
+		<div class="menuleft"><p><img src="images/fix picture/salada.jpg" alt="グリーンサラダ"></p>
+			<dl>
+			<dt>グリーンサラダ</dt>
+			<dd>￥400</dd>
+			</dl>
+		</div>
+		<div class="menuright">
+		<p><img src="images/fix picture/neapolitan.jpg" alt="ナポリタン"></p>
+		<dl>
+		<dt>ナポリタン</dt>
+		<dd>￥850</dd>
+		</dl>
+		</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<!---News--->
+<section>
+<div class="newsbox" id="newspage">
+	<div id="access">
+	<img src="images/news.jpg" width="1740" height="525" alt="news">
+	</div>
+		<div class="newstable">
+			<table>
+				<th></th>
+				<tr><time>2021.08.23</time> | Grand Opening!!</tr>
+				<hr>
+				<td>グランドオープニングにつき、期間限定の全品20%offでのご提供です。</td>
+				<th></th>
+			</table>
+			<table>
+				<tr>2021.08.25 | グッジョブ!カードの配布を開始</tr>
+				<hr>				
+<td>当店のポイントカードの作成が出来るようになりました。当店のアプリまたは<br>
+レジ精算時にスタッフにお声がけいただくことで作成が可能です。</td>
+			</table>
+		</div>
+</div>
+</section>
+
+<!---Access--->
+<section>
+<div class="mainhako2" id="accesspage">
+	<div id="access">
+	<img src="images/bepstat.png" width="580" height="175" alt="access">
+	</div>
+<div class="access">
+	<dl> 
+		<dt>住所</dt>
+			<dd>〒874-0931<br>
+			別府市西野口町1-19<br>
+			コーポ山信ビル1階</dd>
+		<dt>電話</dt>
+			<dd>091-234-5678</dd>
+		<dt>営業時間</dt>
+			<dd>10時~19時</dd>
+			休日　毎週水曜日
+		</dl>
+</div>
+<div class="accessmap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13341.826341703812!2d131.4962599!3d33.2807161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xac8f07fd70162fdb!2z44OS44Ol44O844Oq44K544Kz44Oz44OU44Ol44O844K_5a2m6ZmiIOWIpeW6nOagoQ!5e0!3m2!1sja!2sjp!4v1611726249162!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+</div>
+</section>
+
+<!---Contact--->
+<section>
+<div class="contactbox" id="contactpage">
+	<div id="contactimage"><img src="images/contact.gif"alt="contact"></div>
+
+<h2>お席のご予約</h2>
+<div class="contactform">
+	<table>
+    	 <tr>
+    <td width="127" class="commentleft">・お名前</td>
+    <td width="166" class="commentright"><label for="name">
+		<input type="name">
+		</label></td>
+  		</tr>
+        <tr>
+    <td class="commentleft">・電話番号</td>
+    <td class="commentright"><label for="text">
+		<input type="text">
+		</label>
+	</td>
+	</tr>
+    <tr>
+    <td class="commentleft">・メールアドレス</td>
+    <td class="commentright"><label for="email">
+		<input type="email">
+		</label></td>
+  </tr>
+   <tr>
+    <td height="53" class="commentleft">・ご来店日時</td>
+    <td class="commentright"><label for="date">
+		<input type=date name="calendar" max="9999-12-31">
+		</label></td>
+  </tr>
+  <tr>
+    <td class="commentleft">・ご来店人数</td>
+    <td class="commentright"><select>
+			<option value="">選択してください
+			<option value="0">1</option>
+			<option value="1">2</option>
+			<option value="2">3</option>
+			<option value="3">4</option>
+			<option value="4">5</option>
+			<option value="5">6</option>
+			<option value="6">7</option>
+			<option value="7">8</option>
+			<option value="8">9</option>
+			<option value="9">10</option>
+				</select>
+		</label></td>
+  </tr>
+  <tr>
+    <td class="commentleft" id="comment2">・備考</td>
+    <td class="commentright"><label for="text">
+		<textarea></textarea>
+		</label></td>
+  </tr>
+    </table>
+    
+    <label><input type="submit" value"送信" class="submit2"></label>
+    </div>
+</div>
+</section>
+
+<footer>
+<small>© HEURIS BAKERY</small>
+</footer>
+
+
+</body>
+
+</html>
