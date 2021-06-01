@@ -639,8 +639,9 @@ section:not(#debut, #about, #performance, #technology, #design, #utility, #lineu
 	width: 100%;
 }
 
-.absoluteUt {
-	position: absolute;
+.relativeUt:first-child {
+	width: 100%;
+	overflow: hidden;
 }
 
 .utility_caption {
@@ -652,12 +653,13 @@ section:not(#debut, #about, #performance, #technology, #design, #utility, #lineu
 
 .utility_caption p {
 	color: #FFF;
-	font-size: 1.5vw;
+	font-size: 2.8vw;
 	position: absolute;
-	top: 87%;
-	left: 0%;
+	top: -77%;
 	background-color: rgba( 0,0,0,0.4 );
-	padding: 1.1vw;
+	padding: 3vw;
+	height: 70px;
+	text-align: left;
 }
 
 p.absoluteUt {
@@ -685,7 +687,7 @@ p.absoluteUt {
 
 #lineup {
 	height: 200vw;
-	padding: 5% 10.5%;
+	padding: 15% 10.5%;
 }
 
 .lineup {
