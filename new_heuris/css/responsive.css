@@ -203,13 +203,13 @@ p ,dd {
 	color: #fff;
 	display: flex;
 	align-items: center;
-	padding-left: 35%;
-	font-size: 1.7vw;
+	padding: 2%;
+	font-size: 2.9vw;
+	justify-content: space-evenly;
 }
 
 .acd-label:after{
     box-sizing: border-box;
-    content: url(../images/star.svg);
 	display: flex;
 	align-items: center;
 	padding-left: 15%;
@@ -686,7 +686,7 @@ p.absoluteUt {
 /*Lineupコンテンツここから*/
 
 #lineup {
-	height: 200vw;
+	height: 257vw;
 	padding: 15% 10.5%;
 }
 
@@ -699,7 +699,7 @@ p.absoluteUt {
 }
 
 .lineupbox {
-	height: 600px;
+	height: 125vw;
 	display: flex;
 }
 
