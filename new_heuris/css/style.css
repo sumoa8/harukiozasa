@@ -411,6 +411,10 @@ nav {
 	vertical-align: middle;
 }
 
+.burger_box {
+	display: none;
+}
+
 
 #wrapper {
 	display: flex;

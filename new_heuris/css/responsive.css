@@ -71,7 +71,8 @@ p ,dd {
 	opacity: 0;	/*fade_in　はモバイル版では非表示*/
 }
 
-@keyframes nav_in {
+/* PC版ナビはモバイル版で非表示 */
+/* @keyframes nav_in {
 	0% { 
 	transform: translateY( -95px )
 	}
@@ -89,44 +90,13 @@ p ,dd {
 	height: 95px;
 	position: absolute;
 	background-color: #000;
-}
+PC版ナビここまで非表示
+} */
 
 #top_logo:hover {
 	opacity: 0.5;
 	transition-duration: 0.4s;
 	transition-timing-function: ease;
-}
-
-.hover_slide {
-	background: rgba(0,0,0,0);
-	display: inline-block;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	}
-
-.hover_slide:before {
-	background : #FFE100;
-	content:"";
-	display: block;
-	height: 100%;
-	left: -100%;
-	opacity: 0.8;
-	position: absolute;
-	z-index: 3;
-	transition: .3s;
-	top: 0px;
-	width: 100%;
-}
-
-.hover_slide:hover:before {
-	left:0;
-}
-
-.hover_slide a {
-	position: absolute;
-	z-index: 4;
 }
 
 .hover_slide a:hover {
@@ -187,6 +157,120 @@ p ,dd {
 		
 
 /*演出ここまで*/
+
+/* ハンバーガーメニューの設定ここから */
+
+@media only screen and (max-width: 700px) {
+
+	.nav_back {
+		display: none;
+	}
+
+	.burger_box {
+		display: block;
+		height: 30vw;
+		background-color: #000;
+		font-family: "Arial", "游ゴシック", "ヒラギノ角ゴ", sans-serif;
+		font-weight: lighter;
+		text-align: center;
+	}
+
+	.burger_box h1 {
+		padding: 4vw 0vw;
+	}
+
+	.menu-content {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 100%;
+		z-index: 80;
+		background-color: rgba( 0, 93, 173, 0.8 );
+		transition: all 0.5s;
+	}
+
+	.menu-content ul {
+		padding: 70px 10px 0;
+	}
+	.menu-content ul li {
+		border-bottom: solid 1px #ffffff;
+		list-style: none;
+	}
+	.menu-content ul li a {
+		display: block;
+		width: 100%;
+		font-size: 15px;
+		box-sizing: border-box;
+		color:#ffffff;
+		text-decoration: none;
+		padding: 9px 15px 10px 0;
+		position: relative;
+	}
+	.menu-content ul li a::before {
+		content: "";
+		width: 7px;
+		height: 7px;
+		border-top: solid 2px #ffffff;
+		border-right: solid 2px #ffffff;
+		transform: rotate(45deg);
+		position: absolute;
+		right: 11px;
+		top: 16px;
+	}
+
+	#menu-btn-check:checked ~ .menu-content {
+		left: 0;/*メニューを画面内へ*/
+	}
+
+	.menu-btn {
+		position: fixed;
+		top: 16px;
+		right: 10px;
+		display: flex;
+		height: 60px;
+		width: 60px;
+		justify-content: center;
+		align-items: center;
+		z-index: 90;
+		background-color: #005DAD;
+	}
+
+	.nav_in {
+		content: '';
+		height: 50px;
+		width: 50px;
+		display: none;
+		background-image: url(../images/burger_star_minus.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		transition-duration: 1s;
+		transition-timing-function: ease;
+	}
+
+	.nav_out {
+		content: '';
+		height: 50px;
+		width: 50px;
+		background-image: url(../images/burger_star.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		transition-duration: 1s;
+		transition-timing-function: ease;
+	}
+
+
+
+	#menu-btn-check {
+		display: none;
+	}
+}
+
+/* ハンバーガーメニューの設定ここまで */
 
 /*アコーディオンメニューの設定ここから*/
 
@@ -325,7 +409,9 @@ p,dd{
 
 /*各セクション全体設定ここから*/
 
-nav {
+/* 
+	PC版のナビは非表示ここから
+	nav {
 	background-color: #005DAD;
 	width: 100vw;
 	height: 95px;
@@ -377,7 +463,9 @@ nav {
 
 .navilist li h1 a img {
 	vertical-align: middle;
-}
+} 
+	PC版のナビは非表示ここまで
+	*/
 
 
 #wrapper {
@@ -385,7 +473,6 @@ nav {
 	flex-direction: column;
 	margin: 0 auto;
 	width: 100%;
-	padding-top: 95px;
 	font-size: 4.5vw;
 	
 }
