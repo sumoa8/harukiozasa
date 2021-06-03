@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>お問い合わせフォーム</title>
+<link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+
+<h2 class="page_headline">
+	Contact
+</h2>
+<form method="POST" action="#">
+
+<table style="border:20px solid #dbc37d" cellpadding="10">
+<tr>
+<td>お名前（必須）</td>
+<td><input type=text name="last_name", class="border_bottom" size="40"></td>
+</tr>
+<tr>
+<td>電話番号（必須）</td>
+<td><input type=text name="first_name", class="border_bottom" size="40"></td>
+</tr>
+
+<tr>
+<td>メールアドレス</td>
+<td><input name="mailaddress", class="border_bottom" size="40"></td>
+</tr>
+<tr>
+<td>性別</td>
+<td>
+<input type="radio" name="sex" value="male" checked>女性
+<input type="radio" name="sex" value="female">男性
+</td>
+</tr>
+<tr>
+<td>ご要望</td>
+<td><select name="sns_acount", class="border_bottom">
+<option value="">選択下さい。</option>
+<option value="Twitter">商品お取り置き</option>
+<option value="Facebook">商品返品</option>
+<option value="Instagram">その他</option>
+</select></td>
+</tr>
+<td>備考</td>
+<td>
+<textarea cols="40" rows="15"></textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="送信">
+<input type="reset" value="取消"></td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

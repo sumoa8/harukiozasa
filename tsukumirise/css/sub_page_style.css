@@ -54,10 +54,6 @@ nav ul li a {
 	display: block;
 }
 
-nav ul li img {
-    /* width: 6.48vw; */
-}
-
 nav ul {
     height: 12vw;
     display: flex;
@@ -87,6 +83,13 @@ body, nav {
 	display: inline-block;
 }
 
+.tourism_list p {
+	width: 90%;
+	color: #fff;
+	padding-top: 1vw;
+	margin: 0 auto;
+}
+
 #tourism_page ul {
 	display: flex;
 	justify-content: space-between;
@@ -99,6 +102,25 @@ body, nav {
 
 .list_child {
 	margin-top: 7vw;
+}
+
+.top_jump {
+	width: 12vw;
+	margin: 65vw 0 0 6.9vw;
+	display: block;
+	transition-duration: 0.3s;
+}
+
+.top_jump:hover {
+	display: block;
+    transform-origin: center;
+	transform: scale(1.07, 1.07);
+	transition-duration: 0.3s;
+}
+
+#tourism_top_jump {
+	margin: 6vw 0 0 -0.1vw;
+	color: #fff;
 }
 
 /*ここからフッターの設定*/

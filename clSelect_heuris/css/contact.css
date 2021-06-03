@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+#contact {
+	font-family:"小塚ゴシック Pro R", "小塚ゴシック Pro B";
+	font-family:  "Rockwell", "小塚ゴシック Pro", sans-selif;
+	font-weight: normal;
+	line-height:2;
+	font-feature-settings:"palt";
+	color: #2B2B2B;
+	margin:0;
+	padding:8vw 1vw;
+	background-image:url(../images/product_back.jpg);
+	position: relative;
+}
+
+.page_headline {
+	width: 28vw;
+	position: absolute;
+	top: 2vw;
+	left: 5vw;
+	z-index: 2;
+	background-image: url(../images/heading_line.png);
+	background-position: 3vw 8.5vw;
+}
+
+/*#contact table{
+	width: 86.3%;
+	border-radius:40px;
+	margin: 4vw auto;
+	padding:70px 70px 150px 70px;
+}*/
+
+/* style="border:20px solid #dbc37d" cellpadding="10"*/
+
+form {
+	width: 84.3%;
+	background-color: #fcfcfc;
+	border: 20px solid #dbc37d;
+	border-radius:40px;
+	margin: 4vw auto;
+	padding: 5vw 0 5vw 0;
+}
+	
+
+.border_bottom{
+	border-right:none;
+	border-left:none;
+	border-top:none;
+	border-bottom:2px solid #666;
+}
+
+table {
+	margin: 0 auto;
+}
+
+table th{
+	padding:10px;
+}
+
+table td{
+	padding:5px 10px;
+}
+
+.form_remarks {
+	vertical-align : top;
+}
+
+.send_button {
+	text-align: center;
+}
+
+input[type="submit"] ,input[type="reset"] {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 11pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 9px 30px;   /* 余白       */
+	background    : #dbc37d;     /* 背景色     */
+	color         : #ffffff;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	border        : 2px solid #646464;     /*枠の指定 */
+}
+
+input[type="reset"]:hover {
+  color         : #646464;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+input[type="submit"]:hover {
+  color         : #646464;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}

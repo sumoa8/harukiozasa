@@ -1,0 +1,55 @@
+@charset "utf-8";   
+
+nav {
+	height: 130px;
+    font-family: "小塚ゴシック Pr6N", sans-selif, system-ui;
+    font-size: 90%;
+    color: white;
+    vertical-align: middle;
+}
+
+nav ul li {
+	width: 13vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:not(:first-child) {
+    justify-content: center;
+}
+
+nav ul li:first-child {
+    width: 5.5vw;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1vw;
+}
+
+nav ul li img {
+    width: 5vw;
+}
+
+nav ul {
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 86.11vw;
+    margin: auto;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+}
+
+.nav a:hover {
+    border: solid #ec9f1e 2px;
+    transition-duration: 0.2s;
+}

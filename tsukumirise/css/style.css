@@ -52,6 +52,13 @@ section p{
 .details_button{
 	width: 18.33vw;
 	margin-left: 2.8vw;
+	transition-duration: 0.3s;
+}
+
+.details_button:hover {
+	transform-origin: center;
+	transform: scale(1.07, 1.07);
+	transition-duration: 0.3s;
 }
 
 .overflow_image_right {
@@ -74,6 +81,24 @@ section p{
 /* 背景色が水色のページ */
 nav,#about,.content_box,#tourism, #shop, footer {
     background-color: #0099cc;
+}
+
+.jump_about {
+	display: block;
+	margin-top: 0vw;
+	padding-top: 13vw;
+}
+
+.jump {
+	display: block;
+	margin-top: -10%;
+	padding-top: 10%;
+}
+
+.jump_2 {
+	display: block;
+	margin-top: -15%;
+	padding-top: 15%;
 }
 
  /* ここからトップページ */
@@ -104,38 +129,10 @@ nav,#about,.content_box,#tourism, #shop, footer {
     padding-top: 2vw;
 }
 
-/* ナビの設定 */
-
-nav {
-    font-family: "小塚ゴシック Pr6N", sans-selif, system-ui;
-    font-size: 100%;
-    color: white;
-    vertical-align: middle;
-
-}
-
-nav ul li a {
-	display: block;
-}
-
-nav ul li img {
-    /* width: 6.48vw; */
-}
-
-nav ul {
-    height: 12vw;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 86.11vw;
-    margin: auto;
-}
-
 /* ここから私たちの在り方 */
 
 #about {
-    padding-bottom: 13.2vw;
+    padding: 15vw 0 13.2vw 0;
 }
 
 .content_box {
@@ -167,7 +164,7 @@ nav ul {
     width: 93.14vw;
     float: right;
     position: relative;
-    padding: 9.3vw 0 8vw 0;
+    padding: 9.3vw 0 13vw 0;
 }
 
 .activity_history_box h2 {
@@ -337,7 +334,7 @@ footer {
 }
 
 footer address {
-	width: 86.5%;
+	width: 95%;
 	margin: 0 auto;
 }
 
@@ -377,7 +374,7 @@ small {
 .site_map li {
 	height: 7vw;
 	border-right: 1px solid #fff;
-	padding-right: 0.8vw;
+	padding-right: 1.5vw;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -390,6 +387,11 @@ small {
 
 .site_map li a:nth-child(2) {
 	font-weight: normal;
+}
+
+.site_map li:hover {
+    border: solid #ec9f1e 2px;
+    transition-duration: 0.2s;
 }
 	
 
