@@ -96,6 +96,15 @@ section {
 
 /* Worksページの設定ここから */
 
+.works_page_mobile .works_box a{
+    display: block;
+    margin: 0 auto;
+}
+
+.works_page_mobile .works_box p {
+    margin-top: 7vw;
+}
+
 .categoryMb {
     font-size: 15rem;
     margin: 0 auto;
@@ -106,6 +115,7 @@ section {
 #mbCategory {
     width: 100%;
     height: 100%;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -115,8 +125,18 @@ section {
     transition-duration: 0.4s;
 }
 
+.works_contentsMb {
+    width: 100%;
+}
+
+.works_box .works_contentsMb a{
+    display: block;
+    margin: 0 auto;
+}
+
 .works_contentsMb div {
     width: 100%;
+    margin: 0 auto;
 }
 
 .works_contentsMb div p {
@@ -182,12 +202,24 @@ section {
     margin: 0;
 }
 
+.works_mobile .mobile_image {
+    margin-top: 15vw;
+}
+
 .works_mobile figure {
     width: 85%;
     margin-top: 20vw;
 }
 
+.works_mobile figcaption {
+    font-size: 3vw;
+}
+
 /* 各作品の個別ページの設定ここまで */
+
+.mobile_works {
+    display: block;
+}
 
 .mobile_works a{
     display: block;

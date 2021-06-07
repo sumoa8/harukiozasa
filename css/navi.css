@@ -209,6 +209,7 @@ nav {
     .menu_box {
         width: 100%;
         height: 100px;
+        margin-bottom: 10vw;
         padding: 1vw 0 0 7vw;
     }
 
@@ -225,6 +226,10 @@ nav {
     .menu_box a p {
         font-size: 5vw;
         padding: 5.8vw 0 0 5vw;
+    }
+
+    #nav-content span {
+        font-size: 5vw;
     }
 
 }
