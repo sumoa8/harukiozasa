@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="css/style.css" rel="stylesheet" media="screen and (min-width:701px)">
+    <link href="css/index.css" rel="stylesheet" media="screen and (min-width:701px)">
     <link href="css/destyle.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navi.css" rel="stylesheet">
     
     <!--701ピクセル以上はPCレイアウト。700ピクセル以下はスマホ版を読み込む-->
 	<link href="css/responsive.css" rel="stylesheet" media="screen and (max-width: 700px)">
@@ -15,48 +16,101 @@
 </head>
 <body>
     <h1 class="js-title"><a href="index.html">Haruki Ozasa</a></h1>
-    <div class="wood">
+
+    <!-- PC表示の際のトップページここから -->
+    <div id="pc_view" class="wood">
+        
         <div id="wood" class="js-wood"><img src="images/wood.png" alt="木"></div>
-        
-        <div class="profile_page js-page_link">
-            <div class="page_box">
-                <a href="profile.html">
-                    <p>
-                        プロフィール<br><span>Profile</span>
-                    </p>
-                </a>
-            </div>
-            <img src="images/menu_icon.png" alt="プロフィール" class="spin">
-        </div>
-        
-        <div class="works_page js-page_link">
-            <div class="page_box">
-                <a href="works.html">
-                    <p>
-                        作品集<br><span>Works</span>
-                    </p>
-                </a>
-            </div>
-            <img src="images/menu_icon.png" alt="作品集" class="spin">
-        </div>
-        
-        <div class="contact_page js-contact_link">
-            <div class="page_box">
-                <a href="contact.html" class="contact_image">
-                    <p>
-                        コンタクト<br>
-                        <span>Contact</span>
-                    </p>
-                    <img src="images/bird_house.png" alt="巣箱">
-                    <img src="images/orbit.png" alt="">
-                    <img src="images/swallow.png" alt="ツバメ">
-                    <img src="images/letter.png" alt="コンタクト">
-                </a>
+            <div class="profile_page js-page_link">
+                <div class="page_box">
+                    <a href="profile.html">
+                        <p>
+                            プロフィール<br><span>Profile</span>
+                        </p>
+                    </a>
+                </div>
+                <img src="images/menu_icon.png" alt="プロフィール" class="spin">
             </div>
             
+            <div class="works_page js-page_link">
+                <div class="page_box">
+                    <a href="works.html">
+                        <p>
+                            作品集<br><span>Works</span>
+                        </p>
+                    </a>
+                </div>
+                <img src="images/menu_icon.png" alt="作品集" class="spin">
+            </div>
             
+            <div class="contact_page js-contact_link">
+                <div class="page_box">
+                    <a href="contact.html" class="contact_image">
+                        <p>
+                            コンタクト<br>
+                            <span>Contact</span>
+                        </p>
+                        <img src="images/bird_house.png" alt="巣箱">
+                        <img src="images/orbit.png" alt="">
+                        <img src="images/swallow.png" alt="ツバメ">
+                        <img src="images/letter.png" alt="コンタクト">
+                    </a>
+            </div>    
         </div>
     </div>
+
+    <!-- PC表示の際のトップページここまで -->
+
+    <!-- モバイル表示の際のトップページここから -->
+
+    <div id="mbWood" class="js-wood">
+        <p>Tap here!!</p>
+        <label id="nav-open" for="nav-input">
+            <img src="images/wood.png" alt="木">
+        </label>
+    </div>
+
+    <div class="header-logo-menu">
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <!-- メニューの中のリンクここから -->
+                <div class="menu_box">
+                    <a href="profile.html">
+                        <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                        <p>
+                            プロフィール<br><span>Profile</span>
+                        </p>
+                    </a>
+                </div>
+        
+                <div class="menu_box">
+                    <a href="works.html">
+                        <img src="images/menu_icon.png" alt="作品集" class="spin">
+                        <p>
+                            作品集<br><span>Works</span>
+                        </p>
+                    </a> 
+                </div>
+        
+                <div class="menu_box">
+                    <a href="contact.html" class="contact_image">
+                        <img src="images/mb_bird.png" alt="コンタクト">
+                        <p>
+                            コンタクト<br>
+                            <span>Contact</span>
+                        </p>
+                    </a>
+                </div>
+                <!-- メニューの中のリンクここまで -->
+            </div>
+        </div>
+        <div class="logo-area">LOGO</div>
+    </div>
+
+        <!-- モバイル表示の際のトップページここまで -->
+
 
     <footer>
         <small>&copy; Haruki Ozasa</small>

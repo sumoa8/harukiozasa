@@ -8,11 +8,13 @@
 <link href="css/destyle.css" rel="stylesheet">
 <link href="css/navi.css" rel="stylesheet">
 <link href="css/works_content.css" rel="stylesheet">
+
+<link href="css/sub_page_Res.css" rel="stylesheet" media="screen and (max-width:700px)">
 </head>
 
 <body>
 
-<nav class="clearfix">
+<nav class="clearfix none">
   <ul class="navigation">
     <li>
       <a href="index.html" class="top_icon">
@@ -40,7 +42,64 @@
 	</ul>
 </nav>
 
-<ul class="breadcrumb">
+<!-- モバイル表示の際のメニューここから -->
+
+<div class="sub_page_menu">
+  <label id="nav-open" for="nav-input">
+      <img src="images/index_icon.png" alt="トップページへ">
+  </label>
+</div>
+
+<div class="header-logo-menu">
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <!-- メニューの中のリンクここから -->
+            <div class="logo-area">
+              <a href="index.html">
+                <img src="images/wood.png" alt="トップページへ">
+                <p>
+                    トップページ<br><span>Top page</span>
+                </p>
+            </a>
+            </div>
+
+            <div class="menu_box">
+                <a href="profile.html">
+                    <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                    <p>
+                        プロフィール<br><span>Profile</span>
+                    </p>
+                </a>
+            </div>
+    
+            <div class="menu_box">
+                <a href="works.html">
+                    <img src="images/menu_icon.png" alt="作品集" class="spin">
+                    <p>
+                        作品集<br><span>Works</span>
+                    </p>
+                </a> 
+            </div>
+    
+            <div class="menu_box">
+                <a href="contact.html" class="contact_image">
+                    <img src="images/mb_bird.png" alt="コンタクト">
+                    <p>
+                        コンタクト<br>
+                        <span>Contact</span>
+                    </p>
+                </a>
+            </div>
+            <!-- メニューの中のリンクここまで -->
+        </div>
+    </div>
+</div>
+
+  <!-- モバイル表示の際のメニューここまで -->
+
+<ul class="breadcrumb none">
   <li>
     <a href="works.html">
       作品集
@@ -49,25 +108,33 @@
   <li>第16回アジア彫刻展</li>
 </ul>
 
-<div class="works_content">
-  <h2>
-    第16回アジア彫刻展
-  </h2>
-  <div class="works_category">
-    DTP / Web
-  </div>
-  <p>
-    大分県で開催されるビエンナーレ、『第16回アジア彫刻展』のポスター募集に応募した作品です。"アジア"という多国籍の入り混じる文化を多数の彩色で表現し、"彫刻"という空間を重視するアートを無限に広がる宇宙ととらえ、無数の彫刻刀が円陣を組むかのように新たな作品を切り開いていく様を表現しました。<br>
-    <span>募集元 : 大分県 芸術文化スポーツ振興課</span>
-  </p>
-
-  <figure>
-    <img src="images/asia_sculpture_a3.jpg" width="45%" alt="第16回アジア彫刻展のポスター">
-    <figcaption>A3 ポスター</figcaption>
-  </figure>
+<div class="mobile_works">
+  <a href="works.html" alt="作品一覧に戻る">作品一覧に戻る</a>
 </div>
 
-<footer>copy rights</footer>
+<div class="works_mobile">
+  <div class="works_content works_contentsMb">
+    <h2 class="mb_heading">
+      第16回アジア彫刻展
+    </h2>
+    <div class="works_category">
+      DTP / Web
+    </div>
+    <p>
+      大分県で開催されるビエンナーレ、『第16回アジア彫刻展』のポスター募集に応募した作品です。"アジア"という多国籍の入り混じる文化を多数の彩色で表現し、"彫刻"という空間を重視するアートを無限に広がる宇宙ととらえ、無数の彫刻刀が円陣を組むかのように新たな作品を切り開いていく様を表現しました。<br>
+      <span>募集元 : 大分県 芸術文化スポーツ振興課</span>
+    </p>
+  
+    <figure>
+      <img src="images/asia_sculpture_a3.jpg" width="45%" alt="第16回アジア彫刻展のポスター">
+      <figcaption>A3 ポスター</figcaption>
+    </figure>
+  </div>
+</div>
+
+<footer>
+  <small>&copy; Haruki Ozasa</small>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js" integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw==" crossorigin="anonymous"></script>
 <script src="js/common.js"></script>

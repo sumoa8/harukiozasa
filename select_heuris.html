@@ -8,11 +8,13 @@
 <link href="css/destyle.css" rel="stylesheet">
 <link href="css/navi.css" rel="stylesheet">
 <link href="css/works_content.css" rel="stylesheet">
+
+<link href="css/sub_page_Res.css" rel="stylesheet" media="screen and (max-width:700px)">
 </head>
 
 <body>
 
-<nav class="clearfix">
+<nav class="clearfix none">
   <ul class="navigation">
     <li>
       <a href="index.html" class="top_icon">
@@ -40,7 +42,64 @@
 	</ul>
 </nav>
 
-<ul class="breadcrumb">
+<!-- モバイル表示の際のメニューここから -->
+
+<div class="sub_page_menu">
+  <label id="nav-open" for="nav-input">
+      <img src="images/index_icon.png" alt="トップページへ">
+  </label>
+</div>
+
+<div class="header-logo-menu">
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <!-- メニューの中のリンクここから -->
+            <div class="logo-area">
+              <a href="index.html">
+                <img src="images/wood.png" alt="トップページへ">
+                <p>
+                    トップページ<br><span>Top page</span>
+                </p>
+            </a>
+            </div>
+
+            <div class="menu_box">
+                <a href="profile.html">
+                    <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                    <p>
+                        プロフィール<br><span>Profile</span>
+                    </p>
+                </a>
+            </div>
+    
+            <div class="menu_box">
+                <a href="works.html">
+                    <img src="images/menu_icon.png" alt="作品集" class="spin">
+                    <p>
+                        作品集<br><span>Works</span>
+                    </p>
+                </a> 
+            </div>
+    
+            <div class="menu_box">
+                <a href="contact.html" class="contact_image">
+                    <img src="images/mb_bird.png" alt="コンタクト">
+                    <p>
+                        コンタクト<br>
+                        <span>Contact</span>
+                    </p>
+                </a>
+            </div>
+            <!-- メニューの中のリンクここまで -->
+        </div>
+    </div>
+</div>
+
+  <!-- モバイル表示の際のメニューここまで -->
+
+<ul class="breadcrumb none">
   <li>
     <a href="works.html">
       作品集
@@ -48,38 +107,43 @@
   </li>
   <li>Select shop heuris</li>
 </ul>
+<div class="mobile_works">
+  <a href="works.html" alt="作品一覧に戻る">作品一覧に戻る</a>
+</div>
 
-<div class="works_content">
-  <h2>
-    Select shop heuris
-  </h2>
-  <div class="works_category">
-    DTP / Web
+<div class="works_mobile">
+  <div class="works_content works_contentsMb">
+    <h2>
+      Select shop heuris
+    </h2>
+    <div class="works_category">
+      DTP / Web
+    </div>
+    <p>
+      訓練校の課題で制作したセレクトショップのデザインです。割引フェアのデザインを中心に制作しました。ロゴマークの掲載希望があったため、「夜空の星を見上げ、輝く星を見つけ出すように良い服に巡り合える」と考えたコンセプトから広げ、天体をイメージしたスタイルにしました。
+    </p>
+  
+    <figure>
+      <img src="images/select_heuris.svg" alt="Select shop heuris ロゴ">
+      <figcaption>ロゴマーク</figcaption>
+    </figure>
+    <figure>
+        <img src="images/slHeuris_autumn_a4.pdf" alt="Select shop heurisのA4チラシ">
+      <figcaption>オータムフェア・A4チラシ</figcaption>
+    </figure>
+    <figure>
+      <img src="images/slHeuris_autumn_dm.pdf" alt="Select shop heurisのDM">
+    <figcaption>オータムフェア・DM</figcaption>
+  </figure>
+  <figure>
+    <img src="images/slHeuris_christmas_fair_A4.pdf" alt="Select shop heurisnのA4クリスマスチラシ">
+  <figcaption>クリスマスフェア・A4チラシ</figcaption>
+  </figure>
+  <figure>
+    <img src="images/slHeuris_christmas_b2.pdf" alt="Select shop heurisnのB2ポスター">
+  <figcaption>クリスマスフェア・B2店内掲載想定ポスター</figcaption>
+  </figure>
   </div>
-  <p>
-    訓練校の課題で制作したセレクトショップのデザインです。割引フェアのデザインを中心に制作しました。ロゴマークの掲載希望があったため、「夜空の星を見上げ、輝く星を見つけ出すように良い服に巡り合える」と考えたコンセプトから広げ、天体をイメージしたスタイルにしました。
-  </p>
-
-  <figure>
-    <img src="images/select_heuris.svg" alt="Select shop heuris ロゴ">
-    <figcaption>ロゴマーク</figcaption>
-  </figure>
-  <figure>
-      <img src="images/slHeuris_autumn_a4.pdf" alt="Select shop heurisのA4チラシ">
-    <figcaption>オータムフェア・A4チラシ</figcaption>
-  </figure>
-  <figure>
-    <img src="images/slHeuris_autumn_dm.pdf" alt="Select shop heurisのDM">
-  <figcaption>オータムフェア・DM</figcaption>
-</figure>
-<figure>
-  <img src="images/slHeuris_christmas_fair_A4.pdf" alt="Select shop heurisnのA4クリスマスチラシ">
-<figcaption>クリスマスフェア・A4チラシ</figcaption>
-</figure>
-<figure>
-  <img src="images/slHeuris_christmas_b2.pdf" alt="Select shop heurisnのB2ポスター">
-<figcaption>クリスマスフェア・B2店内掲載想定ポスター</figcaption>
-</figure>
 </div>
 
 <footer>

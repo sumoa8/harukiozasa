@@ -47,3 +47,24 @@ footer {
 footer small {
 	font-size: 1vw;
 }
+
+/* PC版のみの設定ここから */
+
+#mbWood, .header-logo-menu, .sub_page_menu, .bread_crumb{
+	display: none;
+}
+
+/* PC版のみの設定ここまで */
+
+/* ウィンドウサイズにより変わる設定ここから */
+@media screen and (max-width: 701px){
+    #pc_view {
+        display:none;
+	}
+	
+	#mbWood, .header-logo-menu , .sub_page_menu{
+		display: block;
+	}
+}
+
+/* ウィンドウサイズにより変わる設定ここまで */

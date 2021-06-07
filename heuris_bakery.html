@@ -8,11 +8,13 @@
 <link href="css/destyle.css" rel="stylesheet">
 <link href="css/navi.css" rel="stylesheet">
 <link href="css/works_content.css" rel="stylesheet">
+
+<link href="css/sub_page_Res.css" rel="stylesheet" media="screen and (max-width:700px)">
 </head>
 
 <body>
 
-<nav class="clearfix">
+<nav class="clearfix none">
   <ul class="navigation">
     <li>
       <a href="index.html" class="top_icon">
@@ -40,7 +42,64 @@
 	</ul>
 </nav>
 
-<ul class="breadcrumb">
+<!-- モバイル表示の際のメニューここから -->
+
+<div class="sub_page_menu">
+  <label id="nav-open" for="nav-input">
+      <img src="images/index_icon.png" alt="トップページへ">
+  </label>
+</div>
+
+<div class="header-logo-menu">
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <!-- メニューの中のリンクここから -->
+            <div class="logo-area">
+              <a href="index.html">
+                <img src="images/wood.png" alt="トップページへ">
+                <p>
+                    トップページ<br><span>Top page</span>
+                </p>
+            </a>
+            </div>
+
+            <div class="menu_box">
+                <a href="profile.html">
+                    <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                    <p>
+                        プロフィール<br><span>Profile</span>
+                    </p>
+                </a>
+            </div>
+    
+            <div class="menu_box">
+                <a href="works.html">
+                    <img src="images/menu_icon.png" alt="作品集" class="spin">
+                    <p>
+                        作品集<br><span>Works</span>
+                    </p>
+                </a> 
+            </div>
+    
+            <div class="menu_box">
+                <a href="contact.html" class="contact_image">
+                    <img src="images/mb_bird.png" alt="コンタクト">
+                    <p>
+                        コンタクト<br>
+                        <span>Contact</span>
+                    </p>
+                </a>
+            </div>
+            <!-- メニューの中のリンクここまで -->
+        </div>
+    </div>
+</div>
+
+  <!-- モバイル表示の際のメニューここまで -->
+
+<ul class="breadcrumb none">
   <li>
     <a href="works.html">
       作品集
@@ -49,27 +108,33 @@
   <li>HEURIS BAKERY</li>
 </ul>
 
-<div class="works_content">
-  <h2>
-    HEURIS BAKERY
-  </h2>
-  <div class="works_category">
-    DTP / Web / パッケージ
-  </div>
-  <p>
-    コピー、「忙しい毎日を送っている方に、すこしでもリラックスできる場を。」をかかげるベーカリー。職業訓練での共通課題だったため、支給されたロゴマークやコピーから案を広げ、VIデザインをしました。忙しい方たちが立ち寄れるアットホームな空間を意識し、第2の家のような、そして頑張った人たちが”頑張りを認められた”と思えるようなキャンペーンを考えました。
-  </p>
+<div class="mobile_works">
+  <a href="works.html" alt="作品一覧に戻る">作品一覧に戻る</a>
+</div>
 
-  <figure>
-    <img src="images/heuris_bakery_logo.svg" alt="HEURIS BAKERY ロゴ">
-    <figcaption>ロゴマーク（支給）</figcaption>
-  </figure>
-
-  <figure>
-    <a href="heurisbakery/index.html" target="_blank" rel="noopener noreferrer" class="works_thumbnail"><img src="images/heuris_bakery_screen.jpg"></a>
-    <figcaption class="left_caption">コーポレートサイト（サムネイルをクリックするとページに飛びます）</figcaption>
-  </figure>
+<div class="works_mobile">
+  <div class="works_content works_contentsMb">
+    <h2 class="mb_heading">
+      HEURIS BAKERY
+    </h2>
+    <div class="works_category">
+      DTP / Web / パッケージ
+    </div>
+    <p>
+      コピー、「忙しい毎日を送っている方に、すこしでもリラックスできる場を。」をかかげるベーカリー。職業訓練での共通課題だったため、支給されたロゴマークやコピーから案を広げ、VIデザインをしました。忙しい方たちが立ち寄れるアットホームな空間を意識し、第2の家のような、そして頑張った人たちが”頑張りを認められた”と思えるようなキャンペーンを考えました。
+    </p>
   
+    <figure>
+      <img src="images/heuris_bakery_logo.svg" alt="HEURIS BAKERY ロゴ">
+      <figcaption>ロゴマーク（支給）</figcaption>
+    </figure>
+  
+    <figure>
+      <a href="heurisbakery/index.html" target="_blank" rel="noopener noreferrer" class="works_thumbnail"><img src="images/heuris_bakery_screen.jpg"></a>
+      <figcaption class="left_caption">コーポレートサイト（サムネイルをクリックするとページに飛びます）</figcaption>
+    </figure>
+    
+  </div>
 </div>
 
 <footer>

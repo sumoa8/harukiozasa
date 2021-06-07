@@ -8,11 +8,13 @@
 <link href="css/destyle.css" rel="stylesheet">
 <link href="css/navi.css" rel="stylesheet">
 <link href="css/works_content.css" rel="stylesheet">
+
+<link href="css/sub_page_Res.css" rel="stylesheet" media="screen and (max-width:700px)">
 </head>
 
 <body>
 
-<nav class="clearfix">
+<nav class="clearfix none">
   <ul class="navigation">
     <li>
       <a href="index.html" class="top_icon">
@@ -40,7 +42,64 @@
 	</ul>
 </nav>
 
-<ul class="breadcrumb">
+<!-- モバイル表示の際のメニューここから -->
+
+<div class="sub_page_menu">
+  <label id="nav-open" for="nav-input">
+      <img src="images/index_icon.png" alt="トップページへ">
+  </label>
+</div>
+
+<div class="header-logo-menu">
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <!-- メニューの中のリンクここから -->
+            <div class="logo-area">
+              <a href="index.html">
+                <img src="images/wood.png" alt="トップページへ">
+                <p>
+                    トップページ<br><span>Top page</span>
+                </p>
+            </a>
+            </div>
+
+            <div class="menu_box">
+                <a href="profile.html">
+                    <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                    <p>
+                        プロフィール<br><span>Profile</span>
+                    </p>
+                </a>
+            </div>
+    
+            <div class="menu_box">
+                <a href="works.html">
+                    <img src="images/menu_icon.png" alt="作品集" class="spin">
+                    <p>
+                        作品集<br><span>Works</span>
+                    </p>
+                </a> 
+            </div>
+    
+            <div class="menu_box">
+                <a href="contact.html" class="contact_image">
+                    <img src="images/mb_bird.png" alt="コンタクト">
+                    <p>
+                        コンタクト<br>
+                        <span>Contact</span>
+                    </p>
+                </a>
+            </div>
+            <!-- メニューの中のリンクここまで -->
+        </div>
+    </div>
+</div>
+
+  <!-- モバイル表示の際のメニューここまで -->
+
+<ul class="breadcrumb none">
   <li>
     <a href="works.html">
       作品集
@@ -48,38 +107,43 @@
   </li>
   <li>New HEURIS</li>
 </ul>
+<div class="mobile_works">
+  <a href="works.html" alt="作品一覧に戻る">作品一覧に戻る</a>
+</div>
 
-<div class="works_content">
-  <h2>
-    New HEURIS
-  </h2>
-  <div class="works_category">
-    Web / VI / UI
+<div class="works_mobile">
+  <div class="works_content works_contentsMb">
+    <h2>
+      New HEURIS
+    </h2>
+    <div class="works_category">
+      Web / VI / UI
+    </div>
+    <p>
+      とある自動車メーカーが開発した、架空の新型車のBIデザインです。若者に対して、コストパフォーマンスは良いが高級感を感じさせる、またいつまでも童心で居たい好奇心旺盛な大人にも楽しい走りを実感していただくブランドとしてデザインしました。全て自分で撮り下ろした、車の走行写真のクオリティなどに力を入れました。
+    </p>
+  
+    <figure>
+      <img src="images/new_heuris_logo.svg" alt="HEURIS ロゴ">
+      <figcaption>ロゴマーク</figcaption>
+      <figcaption class="left_caption">「H」の文字をベースに、若者を意識したキラメキを形どった菱を組み合わせてデザインしました。メインカラーには青春を象徴するブルーを取り入れました。</figcaption>
+    </figure>
+    <figure>
+      <a href="new_heuris/index.html" alt="New HEURISのブランドサイト" target="_blank" rel="noopener noreferrer" class="works_thumbnail">
+        <img src="images/new_heuris_screen.jpg" alt="New HEURIS ブランドサイト">
+      </a>
+      <figcaption class="left_caption">コーポレートサイト（サムネイルをクリックするとページに飛びます）</figcaption>
+    </figure>
+    <figure>
+      <div class="mobile_image">
+        <img src="images/new_heuris_Mb.jpg" alt="New HEURIS Web モバイル版">
+      </div>
+      <div class="mobile_image">
+        <img src="images/new_heuris_Mb_2.jpg" alt="New HEURIS Web モバイル版">
+      </div>
+      <figcaption>レスポンシブ・モバイル対応の作品です。</figcaption>
+    </figure>
   </div>
-  <p>
-    とある自動車メーカーが開発した、架空の新型車のBIデザインです。若者に対して、コストパフォーマンスは良いが高級感を感じさせる、またいつまでも童心で居たい好奇心旺盛な大人にも楽しい走りを実感していただくブランドとしてデザインしました。全て自分で撮り下ろした、車の走行写真のクオリティなどに力を入れました。
-  </p>
-
-  <figure>
-    <img src="images/new_heuris_logo.svg" alt="HEURIS ロゴ">
-    <figcaption>ロゴマーク</figcaption>
-    <figcaption class="left_caption">「H」の文字をベースに、若者を意識したキラメキを形どった菱を組み合わせてデザインしました。メインカラーには青春を象徴するブルーを取り入れました。</figcaption>
-  </figure>
-  <figure>
-    <a href="new_heuris/index.html" alt="New HEURISのブランドサイト" target="_blank" rel="noopener noreferrer" class="works_thumbnail">
-      <img src="images/new_heuris_screen.jpg" alt="New HEURIS ブランドサイト">
-    </a>
-    <figcaption class="left_caption">コーポレートサイト（サムネイルをクリックするとページに飛びます）</figcaption>
-  </figure>
-  <figure>
-    <div class="mobile_image">
-      <img src="images/new_heuris_Mb.jpg" alt="New HEURIS Web モバイル版">
-    </div>
-    <div class="mobile_image">
-      <img src="images/new_heuris_Mb_2.jpg" alt="New HEURIS Web モバイル版">
-    </div>
-    <figcaption>レスポンシブ・モバイル対応の作品です。</figcaption>
-  </figure>
 </div>
 
 <footer>

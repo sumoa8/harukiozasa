@@ -7,67 +7,126 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/navi.css" rel="stylesheet">
 <link href="css/destyle.css" rel="stylesheet">
-<link href="css/profile.css" rel="stylesheet">
+<link href="css/profile.css" rel="stylesheet" media="screen and (min-width:701px)">
+
+<link href="css/sub_page_Res.css" rel="stylesheet" media="screen and (max-width:700px)">
 </head>
 
 <body>
 
-<nav class="clearfix">
-  <ul class="navigation">
-    <li>
-      <a href="index.html" class="top_icon">
-        <img src="images/index_icon.png" alt="トップページ">
-      </a>
-    </li>
-    <li>
-      <a href="profile.html">
-        プロフィール<br>
-        <span lang="en">Profile</span>
-      </a>
-    </li>
-    <li>
-      <a href="works.html">
-      作品集<br>
-      <span lang="en">Works</span>
-      </a>
-    </li>
-    <li>
-      <a href="contact.html">
-      コンタクト<br>
-      <span lang="en">Contact</span>
-      </a>
-    </li>
-	</ul>
-</nav>
+  <!-- モバイル表示の際のメニューここから -->
 
-<section>
-  <h1>プロフィール<br><span>Profile</span></h1>
-
-  <div class="profile">
-    <p class="my_name">
-      <span>Haruki Ozasa</span><br>
-      小笹 晴樹
-    </p>
-      <div class="profile_box">
-        <p>
-          <img src="images/profile_picture.jpg" alt="プロフィール写真">
-        </p>
-        <p class="profile_caption"> 
-          1995年生、大分県内の専門学校でビジュアルデザインを学び、5年半オリジナルウェア、グッズ制作の会社で営業職、製造職に就く。現在はあらゆる方面でのアウトプットが出来るクリエイターを目指しブランディング、ウェブデザインを中心に勉強中。
-        </p>
-      </div>
-    <p class="profile_hl">ツール・スキル</p>
-    <p class="skills">Adobe Illustrator CC / Photoshop CC / Sony Vegas 8.0 / HTML5 / CSS3 / 観光案内 / 刺繍加工・案内・提案</p>
-    <p class="skills">Nikon D5300 (Tamron 18-200mm F/3.5-6.3)</p>
+  <div class="sub_page_menu">
+    <label id="nav-open" for="nav-input">
+        <img src="images/index_icon.png" alt="トップページへ">
+    </label>
   </div>
-</section>
 
-<footer>
-  <small>&copy; Haruki Ozasa</small>
-</footer>
+  <div class="header-logo-menu">
+      <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+              <!-- メニューの中のリンクここから -->
+              <div class="logo-area">
+                <a href="index.html">
+                  <img src="images/wood.png" alt="トップページへ">
+                  <p>
+                      トップページ<br><span>Top page</span>
+                  </p>
+              </a>
+              </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js" integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw==" crossorigin="anonymous"></script>
-<script src="js/common.js"></script>
+              <div class="menu_box">
+                  <a href="profile.html">
+                      <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                      <p>
+                          プロフィール<br><span>Profile</span>
+                      </p>
+                  </a>
+              </div>
+      
+              <div class="menu_box">
+                  <a href="works.html">
+                      <img src="images/menu_icon.png" alt="作品集" class="spin">
+                      <p>
+                          作品集<br><span>Works</span>
+                      </p>
+                  </a> 
+              </div>
+      
+              <div class="menu_box">
+                  <a href="contact.html" class="contact_image">
+                      <img src="images/mb_bird.png" alt="コンタクト">
+                      <p>
+                          コンタクト<br>
+                          <span>Contact</span>
+                      </p>
+                  </a>
+              </div>
+              <!-- メニューの中のリンクここまで -->
+          </div>
+      </div>
+  </div>
+
+    <!-- モバイル表示の際のメニューここまで -->
+
+  <nav class="clearfix none">
+    <ul class="navigation">
+      <li>
+        <a href="index.html" class="top_icon">
+          <img src="images/index_icon.png" alt="トップページ">
+        </a>
+      </li>
+      <li>
+        <a href="profile.html">
+          プロフィール<br>
+          <span lang="en">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="works.html">
+        作品集<br>
+        <span lang="en">Works</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+        コンタクト<br>
+        <span lang="en">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <h1 class="mb_heading">プロフィール<br><span>Profile</span></h1>
+
+    <div class="profile">
+      <p class="my_name">
+        <span>Haruki Ozasa</span><br>
+        小笹 晴樹
+      </p>
+        <div class="profile_box">
+          <p>
+            <img src="images/profile_picture.jpg" alt="プロフィール写真">
+          </p>
+          <p class="profile_caption"> 
+            1995年生、大分県内の専門学校でビジュアルデザインを学び、5年半オリジナルウェア、グッズ制作の会社で営業職、製造職に就く。現在はあらゆる方面でのアウトプットが出来るクリエイターを目指しブランディング、ウェブデザインを中心に勉強中。
+          </p>
+        </div>
+      <p class="profile_hl">ツール・スキル</p>
+      <p class="skills">Adobe Illustrator CC / Photoshop CC / Sony Vegas 8.0 / HTML5 / CSS3 / 観光案内 / 刺繍加工・案内・提案</p>
+      <p class="skills">Nikon D5300 (Tamron 18-200mm F/3.5-6.3)</p>
+    </div>
+  </section>
+
+  <footer>
+    <small>&copy; Haruki Ozasa</small>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js" integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw==" crossorigin="anonymous"></script>
+  <script src="js/common.js"></script>
 </body>
 </html><hr>
 

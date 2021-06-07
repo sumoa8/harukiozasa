@@ -8,11 +8,13 @@
 <link href="css/destyle.css" rel="stylesheet">
 <link href="css/navi.css" rel="stylesheet">
 <link href="css/works_content.css" rel="stylesheet">
+
+<link href="css/sub_page_Res.css" rel="stylesheet" media="screen and (max-width:700px)">
 </head>
 
 <body>
 
-<nav class="clearfix">
+<nav class="clearfix none">
   <ul class="navigation">
     <li>
       <a href="index.html" class="top_icon">
@@ -40,6 +42,63 @@
 	</ul>
 </nav>
 
+<!-- モバイル表示の際のメニューここから -->
+
+<div class="sub_page_menu">
+  <label id="nav-open" for="nav-input">
+      <img src="images/index_icon.png" alt="トップページへ">
+  </label>
+</div>
+
+<div class="header-logo-menu">
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <!-- メニューの中のリンクここから -->
+            <div class="logo-area">
+              <a href="index.html">
+                <img src="images/wood.png" alt="トップページへ">
+                <p>
+                    トップページ<br><span>Top page</span>
+                </p>
+            </a>
+            </div>
+
+            <div class="menu_box">
+                <a href="profile.html">
+                    <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                    <p>
+                        プロフィール<br><span>Profile</span>
+                    </p>
+                </a>
+            </div>
+    
+            <div class="menu_box">
+                <a href="works.html">
+                    <img src="images/menu_icon.png" alt="作品集" class="spin">
+                    <p>
+                        作品集<br><span>Works</span>
+                    </p>
+                </a> 
+            </div>
+    
+            <div class="menu_box">
+                <a href="contact.html" class="contact_image">
+                    <img src="images/mb_bird.png" alt="コンタクト">
+                    <p>
+                        コンタクト<br>
+                        <span>Contact</span>
+                    </p>
+                </a>
+            </div>
+            <!-- メニューの中のリンクここまで -->
+        </div>
+    </div>
+</div>
+
+  <!-- モバイル表示の際のメニューここまで -->
+
 <ul class="breadcrumb">
   <li>
     <a href="works.html">
@@ -48,31 +107,36 @@
   </li>
   <li>津久見市公式 / バナー</li>
 </ul>
+<div class="mobile_works">
+  <a href="works.html" alt="作品一覧に戻る">作品一覧に戻る</a>
+</div>
 
-<div class="works_content">
-  <h2>
-    津久見市公式 / バナー
-  </h2>
-  <div class="works_category">
-    その他
+<div class="works_mobile">
+  <div class="works_content works_contentsMb">
+    <h2>
+      津久見市公式 / バナー
+    </h2>
+    <div class="works_category">
+      その他
+    </div>
+    <p>
+      公式ホームページのファーストビューに掲載されるバナーをデザインしました。一目で情報が目に付くかどうかが鍵となる制作だと思うので、大きく目を惹くフォントや色使いを意識しました。<br>
+      <span>クライアント : 津久見市役所 広報課 様</span>
+    </p>
+  
+    <figure>
+      <img src="images/covid_thum.jpg" alt="コロナに関するお知らせ　バナー">
+      <figcaption class="left_caption">津久見市様への納品のため、みかんをさりげなくあしらいました。</figcaption>
+    </figure>
+    <figure>
+      <img src="images/business_support_thum.jpg" alt="事業者支援　バナー">
+      <figcaption class="left_caption">支援したい気持ちの伝わる元気な色をメインカラーにしました。</figcaption>
+    </figure>
+    <figure>
+        <img src="images/tsukumi_bnr_screen.jpg">
+        <figcaption>掲載後のスクリーンショット</figcaption>
+    </figure>
   </div>
-  <p>
-    公式ホームページのファーストビューに掲載されるバナーをデザインしました。一目で情報が目に付くかどうかが鍵となる制作だと思うので、大きく目を惹くフォントや色使いを意識しました。<br>
-    <span>クライアント : 津久見市役所 広報課 様</span>
-  </p>
-
-  <figure>
-    <img src="images/covid_thum.jpg" alt="コロナに関するお知らせ　バナー">
-    <figcaption class="left_caption">津久見市様への納品のため、みかんをさりげなくあしらいました。</figcaption>
-  </figure>
-  <figure>
-    <img src="images/business_support_thum.jpg" alt="事業者支援　バナー">
-    <figcaption class="left_caption">支援したい気持ちの伝わる元気な色をメインカラーにしました。</figcaption>
-  </figure>
-  <figure>
-      <img src="images/tsukumi_bnr_screen.jpg">
-      <figcaption>掲載後のスクリーンショット</figcaption>
-  </figure>
 </div>
 
 <footer>
