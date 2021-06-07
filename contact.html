@@ -9,11 +9,14 @@
 <link href="css/destyle.css" rel="stylesheet">
 <link href="css/contact.css" rel="stylesheet">
 
+<link href="css/sub_page_Res.css" rel="stylesheet" media="screen and (max-width:700px)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 </head>
 
 <body>
 
-<nav class="clearfix">
+<nav class="clearfix none">
   <ul class="navigation">
     <li>
       <a href="index.html" class="top_icon">
@@ -41,8 +44,65 @@
 	</ul>
 </nav>
 
-<section class="contact">
-  <h1>コンタクト<br><span>Contact</span></h1>
+<!-- モバイル表示の際のメニューここから -->
+
+<div class="sub_page_menu">
+  <label id="nav-open" for="nav-input">
+      <img src="images/index_icon.png" alt="トップページへ">
+  </label>
+</div>
+
+<div class="header-logo-menu">
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <!-- メニューの中のリンクここから -->
+            <div class="logo-area">
+              <a href="index.html">
+                <img src="images/wood.png" alt="トップページへ">
+                <p>
+                    トップページ<br><span>Top page</span>
+                </p>
+            </a>
+            </div>
+
+            <div class="menu_box">
+                <a href="profile.html">
+                    <img src="images/menu_icon.png" alt="プロフィール" class="spin">
+                    <p>
+                        プロフィール<br><span>Profile</span>
+                    </p>
+                </a>
+            </div>
+    
+            <div class="menu_box">
+                <a href="works.html">
+                    <img src="images/menu_icon.png" alt="作品集" class="spin">
+                    <p>
+                        作品集<br><span>Works</span>
+                    </p>
+                </a> 
+            </div>
+    
+            <div class="menu_box">
+                <a href="contact.html" class="contact_image">
+                    <img src="images/mb_bird.png" alt="コンタクト">
+                    <p>
+                        コンタクト<br>
+                        <span>Contact</span>
+                    </p>
+                </a>
+            </div>
+            <!-- メニューの中のリンクここまで -->
+        </div>
+    </div>
+</div>
+
+  <!-- モバイル表示の際のメニューここまで -->
+
+<section id="mobile_contact" class="contact">
+  <h1 class="mb_heading">コンタクト<br><span>Contact</span></h1>
 
   <table class="contact_info">
   	<tbody>

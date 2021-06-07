@@ -217,6 +217,19 @@ section {
 
 /* 各作品の個別ページの設定ここまで */
 
+/* コンタクトページここから */
+
+#mobile_contact {
+    padding: 0;
+}
+
+#mobile_contact .contact_info{
+    font-size: 3.2vw;
+    margin: 11vw auto 0 13vw;
+}
+
+/* コンタクトページここまで */
+
 .mobile_works {
     display: block;
 }
