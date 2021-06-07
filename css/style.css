@@ -50,7 +50,7 @@ footer small {
 
 /* PC版のみの設定ここから */
 
-#mbWood, .header-logo-menu, .sub_page_menu, .bread_crumb{
+#mbWood, .header-logo-menu, .sub_page_menu, .bread_crumb, .mobile_works{
 	display: none;
 }
 
